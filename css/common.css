@@ -1,0 +1,90 @@
+   @font-face {
+    font-family: 'NanumBarunpenB';
+    src: url('/font/NanumBarunpenB.eot'),
+        url('/font/NanumBarunpenB.woff') format('woff'),
+        url('/font/NanumBarunpenB.ttf') format('truetype');
+    src: local("※"),
+      url('/font/NanumBarunpenB.eot'),
+      url('/font/NanumBarunpenB.woff') format('woff'),
+      url('/font/NanumBarunpenB.ttf') format('truetype'),
+      url('/font/NanumBarunpenB.svg#webfonturzspG4F') format('svg');
+  }
+  
+  @font-face {
+    font-family: 'NanumBarunpenR';
+    src: url('/font/NanumBarunpenR.eot'),
+        url('/font/NanumBarunpenR.woff') format('woff'),
+        url('/font/NanumBarunpenR.ttf') format('truetype');
+    src: local("※"),
+      url('/font/NanumBarunpenR.eot'),
+      url('/font/NanumBarunpenR.woff') format('woff'),
+      url('/font/NanumBarunpenR.ttf') format('truetype'),
+      url('/font/NanumBarunpenR.svg#webfonturzspG4F') format('svg');
+  }
+  
+  @font-face {
+    font-family: 'notokr-regular';
+    src: url('/font/notokr-regular.eot'),
+        url('/font/notokr-regular.woff') format('woff'),
+        url('/font/notokr-regular.ttf') format('truetype');
+    src: local("※"),
+      url('/font/notokr-regular.eot'),
+      url('/font/notokr-regular.woff') format('woff'),
+      url('/font/notokr-regular.ttf') format('truetype'),
+      url('/font/notokr-regular.svg#webfonturzspG4F') format('svg');
+  }
+  
+  @font-face {
+    font-family: 'notokr-medium';
+    src: url('/font/notokr-medium.eot'),
+        url('/font/notokr-medium.woff') format('woff'),
+        url('/font/notokr-medium.ttf') format('truetype');
+    src: local("※"),
+      url('/font/notokr-medium.eot'),
+      url('/font/notokr-medium.woff') format('woff'),
+      url('/font/notokr-medium.ttf') format('truetype'),
+      url('/font/notokr-medium.svg#webfonturzspG4F') format('svg');
+  }
+  
+  
+  body,div,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,form,fieldset,caption,label,input,textarea,button,select,iframe,object,header,footer,nav,hgroup,section,article,aside{margin: 0;padding: 0;font-family: 'notokr-regular', 'NG','¸¼Àº °íµñ','dotum','verdana', sans-serif;font-weight: normal;}
+  img,a,span,abbr,address,pre,code,del,em,strong,sub,sup{margin: 0;padding: 0;}
+  h1,h2,h3,h4,h5,h6{font-family: 'notokr-medium';transition: all 0.3s ease;}
+  
+  i{font-style: normal;}
+  
+  body,textarea{}
+  body,input,textarea,select,button,table,th,td{font-style: normal; font-variant: normal; font-family: 'notokr-regular', 'NG','¸¼Àº °íµñ','dotum','verdana', sans-serif;}
+  body{font-size: 16px;color: #666; font-weight: normal;}
+  
+  input[type="file"], input[type="text"], input[type="password"], select{border: 1px solid #dfdfdf;color: #666;}
+  input,textarea,select,button {font-size: 16px;vertical-align: middle;font-family: 'notokr-regular', 'NG','¸¼Àº °íµñ','dotum','verdana', sans-serif;}
+  legend {margin: 0;padding: 0;display: none;}
+  pre{white-space: pre;font-family: 'notokr-regular', 'NG','¸¼Àº °íµñ','dotum','verdana', sans-serif;white-space: pre-wrap;word-wrap: break-word;}
+  textarea{height:initial;resize: none;}
+  
+  img{border: 0 none;vertical-align: middle;}
+  ul,ol,li,dl,dt,dd{list-style: none;padding:0;}
+  a{text-decoration: none;color: #666;font-family: 'notokr-regular', 'NG','¸¼Àº °íµñ','dotum','verdana', sans-serif;display: inline-block;transition: all 0.3s ease;}
+  a:link {color:#666; text-decoration:none; font-size:16px;}
+  
+  table {border-collapse: separate;border-collapse: collapse;width: 100%;position: relative;}
+  table caption{width: 0;height: 0;font-size: 16px;overflow: hidden;text-indent: -999em;}
+  
+  .hidden {
+      overflow: hidden;
+      position: absolute;
+      width: 0;
+      height: 0;
+      top: -9999px;
+      left: -9999px;
+      line-height: 0;
+      text-indent: -999em;
+      margin: 0;
+      padding: 0;
+      background: none;
+      line-height: 0;
+      border: none;
+  }
+  .clearfix:after{content: "";display: block;height: 0;clear: both;visibility: hidden;}
+  .clear{clear: both;height: 0;}
