@@ -1,62 +1,37 @@
 .barunpenR {font-family: 'NanumBarunpenR';}
 
-.child-park{
+.swiper-container {
+  width: 100vw;
+}
+
+.swiper-slide{
+  padding:125px 0;
   background: url(../img/main_25.gif);
-  padding: 125px 0;
   margin:0 auto;
-  display: flex;
 }
 
-.child-park-detail, .child-park-heading, .more-info{
-  color: #fff;
- }
-
-.child-park-heading{
-  font-size: 48px;
+.child-park{
+  color:#fff;
 }
 
-.child-park-detail{
-  font-size: 16px;
+.child-park-heading, .child-park-detail{
+  width:600px;
 }
 
 .child-park-img{
-  padding: 40px;
-  border: 1px solid #aaa;
+  border:1px dashed #744d71;
+  padding: 3%;
   border-radius: 5px;
-  margin-right:45px;
 }
 
-.child-park-caption{
-  width: 600px;
-  margin: auto 0;
+.child-park-heading{
+  font-size:48px;
 }
 
-.more-info{
+.child-park-more{
   padding: 15px 55px;
   border: 1px solid #fff;
   border-radius: 5px;
   margin-top:20px;
   display:inline-block;
-  font-size: 20px;
-}
-
-.child-park-detail{
-  margin-top:20px;
-}
-
-.child-park-box{
-  margin:auto;
-  display:flex;
-}
-
-.carousel-control-prev{
-  left: 130px;
-}
-
-.carousel-control-next{
-  right: 130px;
-}
-
-.carousel-control-next, .carousel-control-prev{
-  opacity: 1;
 }
