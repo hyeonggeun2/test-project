@@ -111,7 +111,7 @@ body {font-family: 'Noto Sans KR', sans-serif !important;}
 
 .introduce, .about {
     margin: 0 auto;
-    padding:50px 0;
+    padding:150px 0;
     text-align: center;
 }
 
@@ -119,12 +119,16 @@ body {font-family: 'Noto Sans KR', sans-serif !important;}
     background:url(/img/main_23.gif) no-repeat center;
 }
 .introduce h2, .about h2 {
-    font-size:3.5rem;
+    font-size:4rem;
+    font-weight: 800;
+    color:#32355d;
 }
 
-.interoduceText {
+.interoduceText, .aboutText {
     color:#7f7f7f;
-    line-height:2;
+    line-height:1.5;
+    width:25%;
+    margin:15px auto;
 }
 
 .interoduceList{
@@ -181,6 +185,77 @@ body {font-family: 'Noto Sans KR', sans-serif !important;}
 .box4:hover{
     background: #dfe38b;
     color:#fff;
+}
+
+/* about */
+
+.about {
+    background: url(../img/main_24.gif) no-repeat center;
+    padding:150px 0;
+}
+
+.about .aboutList {
+    border-radius: 10px;
+    display: flex;
+    padding:20px 0;
+    width:1250px;
+    margin:0 auto;
+    justify-content: space-between;
+}
+
+.about .aboutList li {
+    width:32%;
+    color:#fff;
+    padding:50px;
+    height: 352px;
+    width:400px;
+    position: relative;
+
+}
+
+
+.about .aboutList li h3{
+    font-size:3.0rem;
+    font-weight: 800;
+    width:70%;
+    margin:0 auto 30px;
+    word-break:keep-all;
+}
+
+.textOverFlow{
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+
+.aboutBtn{
+    border:1px solid #fff;
+    border-radius: 5px;
+    padding:10px 50px;
+    display: inline-block;
+    margin-top:30px;
+    position: absolute;
+    bottom:50px;
+    left:110px;
+}
+
+.aboutListItem1{
+    background:#ff759a;
+}
+
+
+
+
+.aboutListItem2{
+    background:#9fdcd7;
+}
+
+.aboutListItem3{
+
+    background:#d9dd80 url(../img/mf2_bg3.png) no-repeat center center;
 }
 
 .footer{
