@@ -1,0 +1,117 @@
+/* 폰트 */
+.barunpenR {font-family: 'NanumBarunpenR';}
+
+/* 헤더 */
+.header {
+    width:70%;;
+    padding:30px;
+    margin:0 auto;
+}
+
+#logo{
+    float:left;
+}
+
+/* 메뉴 */
+.mainMenu{
+    float:left;
+}
+
+.mainMenu .menu-item{
+    display: inline-block;
+    margin:0 20px;
+    font-weight:800;
+    font-size: 1.6rem;
+    line-height: 32px;
+}
+
+.depth {display: none;}
+
+
+.menuWrap {float:right;}
+
+/* member */
+.member, .search, #allMenu{
+    display: inline-block;
+}
+
+.member li {
+    font-size: 1.3rem;
+    color:#888;
+    display: inline-block;
+    line-height: 32px;
+} 
+
+.member li:not(:last-child)::after{
+    content: " · ";
+}
+
+/* 통합검색 */
+.search{ margin-left:20px; }
+
+.search h2 a{
+    display: block;
+}
+.search h2 img{
+    line-height: 32px;
+    vertical-align: middle;
+}
+.search form {display: none;}
+
+/*전체메뉴 */
+#allMenu{ margin-left:20px; }
+
+#allMenu h2 a{
+    display: block;
+}
+#allMenu h2 img{
+    line-height: 32px;
+    vertical-align: middle;
+}
+
+.allMenu {display: none;}
+
+/*슬라이드 이미지*/
+.mainImage {
+    text-align: center;
+    background: url(../img/main_18.gif) no-repeat 50% 100%;
+    height:740px;
+    padding-top:50px;
+}
+
+.mainImage p{
+    font-size:5.0rem;
+    color:#fff;
+}
+.mainImage h2 {
+    color:#fff;
+    margin-bottom: 20px;
+    font-size:4.0rem;
+
+}
+
+.underBar{
+    background: url(../img/underbar_bg.png) repeat-x center bottom;
+    max-width: 550px;
+    margin:0 auto;
+    background-size:100% 25px;
+}
+
+.mainImage span{
+    color:#ffc000;
+}
+
+.mainImage img{
+    margin-top:20px;
+}
+
+.footer{
+    background:#1e203c;
+    color:#eee;
+    text-align: center;
+    padding:50px 0 60px;
+}
+
+.address{
+    font-style:normal;
+}
