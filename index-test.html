@@ -1,34 +1,112 @@
 <!doctype html>
 <html lang="ko-KR">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script defer src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="..." class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="..." class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="..." class="d-block w-100" alt="...">
-        </div>
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/style-test.css">
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script defer src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+
+
+  <title>Hello, world!</title>
+</head>
+
+<body>
+  <h2 class="readable-hidden">송파 공원</h2>
+  <!-- 이미지 부트스트랩 -->
+  <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-interval="10000">
+        <figure class="child-park">
+          <div class="child-park-box">
+            <img class="child-park-img" src="img/mf3_03.gif" alt="어린이 공원">
+            <figcaption class="child-park-caption">
+              <h3 class="child-park-heading">우리 동네 어린이 공원은 어디에 있나요?</h3>
+              <p class="child-park-detail">우리구에서 관리하는 어린이공원은 총 82개소로 어린이들이 안전하고 쾌적한 환경에서 마음껏 뛰어 놀수 있도록 어린이공원 현대화사업을 추진중이며 담배연기없는 금연공원으로 지정하여 관리하고
+                있습니다.</p>
+              <a href="#" class="more-info">자세히 보기</a>
+            </figcaption>
+          </div>
+        </figure>
+      </div>
+      <div class="carousel-item" data-interval="2000">
+          <figure class="child-park">
+              <div class="child-park-box">
+                <img class="child-park-img" src="img/mf3_03.gif" alt="어린이 공원">
+                <figcaption class="child-park-caption">
+                  <h3 class="child-park-heading">우리 동네 생태환경은 어디에 있나요?</h3>
+                  <p class="child-park-detail">생태경관보전지역은 「자연환경보전법」에 의거 ‘생물다양성이 풍부하여 생태적으로 중요하거나 자연경관이 수려하여 특별히 보전할 가치가 큰 지역’을 대상으로 인위적인 개발을 방지하고 동·식물 서식처 및 자연생태계를 보전·관리하는 지역을 말합니다.</p>
+                  <a href="#" class="more-info">자세히 보기</a>
+                </figcaption>
+              </div>
+            </figure>
+      </div>
+      <div class="carousel-item">
+          <figure class="child-park">
+              <div class="child-park-box">
+                <img class="child-park-img" src="img/mf3_03.gif" alt="어린이 공원">
+                <figcaption class="child-park-caption">
+                  <h3 class="child-park-heading">우리 동네 아름다운 공원들은 어디에 있나요?</h3>
+                  <p class="child-park-detail">우리구에는 석촌호수, 올림픽공원, 아시아공원, 한강시민공원, 오금공원 등 아름다운 공원들이 많이 있어요.</p>
+                  <a href="#" class="more-info">자세히 보기</a>
+                </figcaption>
+              </div>
+            </figure>
       </div>
     </div>
-  </body>
+    <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+      <span aria-hidden="true"><img src="img/mf3_prev.png" alt=""></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+      <span aria-hidden="true"><img src="img/mf3_next.png" alt=""></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  
+  <h2>송파나들이</h2>
+  <p class="trip-text">송파는 서울에서 유일하게 호수가 있는 아름다운 도시입니다.</p>
+  <ul class="trip-list">
+    <li>
+      <h3>올림픽공원</h3>
+      <p>언제든 쉬어갈 수 있는 녹색휴식처 건강은 물론 마음의 여유까지 생각하는 도심속의 오아시스입니다.</p>
+      <img src="img/mf4_1.gif" alt="올림픽공원"">
+    </li>
+    <li>
+      <h3>석촌호수</h3>
+      <p>송파나루터가 있던 자리에 한강매립사업을 통해 형성된 석촌호수는 둘레 2.5킬로미터의 송파구를 대표하는 호수공원입니다.</p>
+      <img src="img/mf4_2.gif" alt="석촌호수"">
+    </li>
+    <li>
+      <h3>롯데월드</h3>
+      <p>다채로운 즐거움을 맛볼 수 있는 곳. 놀이공원과 백화점, 호텔, 쇼핑몰, 영화관 등을 묶은 레저와 쇼핑복합공간입니다.</p>
+      <img src="img/mf4_3.gif" alt="롯데월드"">
+    </li>
+    <li>
+      <h3>잠실종합운동장</h3>
+      <p>1977년부터 시공하여 1984년 9월에 완공된 최대 규모의 경기장으로 승승장구하고있는 한국 스포츠의 역사를 빛낸 주역입니다.</p>
+      <img src="img/mf4_4.gif" alt="잠실종합운동장"">
+    </li>
+  </ul>
+
+
+</body>
+
 </html>
