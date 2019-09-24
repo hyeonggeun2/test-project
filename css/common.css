@@ -529,8 +529,8 @@ body {
 /* float를 해제하기 위한 clear 선언 */
 .clearfix::after {
   content: "";
-  clear: both;
   display: block;
+  clear: both;
 }
 /* 숨김 콘텐츠 */
 .readable-hidden, legend{
