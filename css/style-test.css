@@ -1,49 +1,140 @@
+@media screen and (min-width:1580px){
+  .swiper-button-next{right: 70px}
+  .swiper-button-prev{left: 70px}
+}
+@media screen and (min-width:1700px){
+  .swiper-button-next{right: 110px}
+  .swiper-button-prev{left: 110px}
+}
+@media screen and (min-width:1920px){
+  .swiper-button-next{right: 200px}
+  .swiper-button-prev{left: 200px}
+}
+
 .barunpenR {
   font-family: 'NanumBarunpenR';
 }
 
-.swiper-container {
+.where-swiper {
   max-width: 1920px;
-}
-
-.swiper-slide {
   background: url(../img/main_25.gif) no-repeat center;
+  padding-top: 95px;
 }
 
-.child-park {
-  color: #fff;
-  display: flex;
+.where{
+  margin-bottom:50px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom:50px;
 }
 
-.child-park-img {
+.where-img{
+  padding: 30px;
+  transition: all 0.3s ease-in-out; 
+}
+
+.img-border-block{
   border: 1px dashed #744d71;
-  padding: 3%;
   border-radius: 5px;
+  order:-1;
+  margin-right: 50px;
 }
 
-.child-park-heading {
-  font-size: 48px;
+.where-text{
+  color: #fff;
+  width:600px;
+  font-size:16px;
 }
 
-.child-park-heading,
-.child-park-detail {
-  width: 600px;
+.where-text p{
+  margin-top:10px;
 }
 
-.child-park-more {
+.where-more {
   padding: 15px 55px;
   border: 1px solid #fff;
   border-radius: 5px;
   margin-top: 20px;
+  display: inline-block;
+  transition: all 0.3s ease-in-out; 
 }
 
-.child-park-heading,
-.child-park-detail,
-.child-park-more {}
+.where-heading{
+  font-size:48px;
+}
+
+.where:hover .where-more {
+  background: #fff;
+  color: #373a5d;
+  border: 1px solid #373a5d;
+  font-weight: bold;
+}
+
+.where:hover .where-img{
+  transform: scale(1.05,1.05);
+}
+
+.overhidden{
+  order:-1;
+  width:310px;
+  height: 240px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+/* 송파나들이 */
+.picnic {
+  background: url(../img/main_28.gif) no-repeat 100% 10%;
+  max-width:1300px;
+  margin: 0 auto 0 auto;
+}
+
+.picnic-list li p{
+  width:240px;
+}
+
+.picnic-heading{
+  font-size:4rem;
+  text-align: center;
+}
+
+.picnic-list h3{
+  margin: 30px 0 15px;
+  font-size:22px;
+}
+
+.picnic-text{
+  text-align: center;
+  margin-bottom:20px;
+}
+
+.picnic-list li{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.picnic-list li:hover .picnic-img{
+  transform: scale(1.05, 1.05);
+}
+
+
+.picnic-list img{
+  transform: scale(1);
+  transition: all 0.3s ease-in-out; 
+}
+
+/* 우리들의 송파 */
 
 .promise {
+  max-width:1300px;
+  margin-top:20px;
   background: url(../img/main_38.gif) no-repeat center;
+  background-size:cover;
   text-align: center;
+  padding-top: 110px;
+  margin: 0 auto;
 }
 
 
@@ -61,13 +152,16 @@
   display: flex;
   justify-content: space-evenly;
   margin: 0 30px;
-  padding-bottom: 100px;
+  padding-top : 50px;
+  padding-bottom : 50px;
 }
 
 .promise-list li a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 30px 13px 20px;
+  border-radius: 5px;
 }
 
 .promise-list li a img {
@@ -75,12 +169,23 @@
 }
 
 .promise-list li a p {
-  width: 250px;
   text-align: center;
+  font-size: 15px;
+  width:260px;
+  margin: 0 14px;
 }
 
-.promise-box img:hover {
+.promise-list li h3 {
+  font-size: 22px;
+  margin: 10px 0 12px;
+}
+
+.promise-box:hover img {
   transform: scaleX(-1);
+}
+
+.promise-box img{
+  transition: all 0.3s ease-in-out; 
 }
 
 .pbox1:hover {
@@ -97,4 +202,71 @@
 
 .pbox4:hover {
   background: #f7f5dc;
+}
+
+/* 새소식 */
+
+.news{
+  background: #32355d;
+  padding:49px 0 35px;
+  display:flex;
+  color:#fff;
+  justify-content: center;
+}
+
+.news-heading{
+  font-size: 30px;
+  width:200px;
+}
+
+.news-heading::after{
+  content: url(../img/main_41.gif);
+  padding-left:35px;
+}
+
+.news ul{
+  width: 1050px;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.news ul li:nth-child(n+2)::before{
+  content:url(../img/main_44.gif);
+  margin:0 20px;
+}
+
+.news-more{
+  background: url(../img/mb_more.png);
+  width:32px;
+  height: 32px;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-top:32px;
+  transition: all 0.3s ease-in-out; 
+}
+
+.news ul li a{
+  display:inline-block;
+  font-size:15px;
+  width:70%;
+}
+
+.news ul li{
+  width:500px;
+}
+
+.news ul li time{
+  display:inline-block;
+  font-size:15px;
+  width:25%;
+  text-align: right;
+}
+
+.news-more:hover{
+  transform: rotate(90deg)
+}
+
+.news ul li time{
+  color : #999aae;
 }
