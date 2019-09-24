@@ -7,12 +7,12 @@
 }
 
 .swiper-slide {
-  background: url(../img/main_25.gif) no-repeat;
+  background: url(../img/main_25.gif) no-repeat center;
 }
 
 .child-park {
   color: #fff;
-  display:flex;  
+  display: flex;
 }
 
 .child-park-img {
@@ -39,5 +39,62 @@
 
 .child-park-heading,
 .child-park-detail,
-.child-park-more {
+.child-park-more {}
+
+.promise {
+  background: url(../img/main_38.gif) no-repeat center;
+  text-align: center;
+}
+
+
+.promise-heading {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.promise-text {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.promise-list {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 30px;
+  padding-bottom: 100px;
+}
+
+.promise-list li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.promise-list li a img {
+  order: -1;
+}
+
+.promise-list li a p {
+  width: 250px;
+  text-align: center;
+}
+
+.promise-box img:hover {
+  transform: scaleX(-1);
+}
+
+.pbox1:hover {
+  background: #f7e0e8;
+}
+
+.pbox2:hover {
+  background: #e3f4f3;
+}
+
+.pbox3:hover {
+  background: #eff5e2;
+}
+
+.pbox4:hover {
+  background: #f7f5dc;
 }
