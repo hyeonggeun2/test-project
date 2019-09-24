@@ -1,11 +1,11 @@
 /* 폰트 */
-body {font-family: 'Noto Sans KR', sans-serif !important;}
+body {font-family: 'Noto Sans KR', sans-serif !important; transition: 0.3s ease-in-out;}
 .barunpenR {font-family: 'NanumBarunpenR';}
 .notosans{font-family: 'Noto Sans KR', sans-serif;}
 
 /* 헤더 */
 .header {
-    width:1250px;
+    width:1300px;
     padding:30px;
     margin:0 auto;
 }
@@ -25,12 +25,64 @@ body {font-family: 'Noto Sans KR', sans-serif !important;}
     font-weight:800;
     font-size: 1.6rem;
     line-height: 32px;
+    position: relative;
 }
 
-.depth {display: none;}
 
+.mainMenu .menu-item a{
+    padding:10px;
+}
+.mainMenu .menu-item:hover{
+    font-weight: bold;
+}
 
-.menuWrap {float:right;}
+.mainMenu>li:last-child {
+    display: none;
+}
+
+.mainMenu .menu-item:hover .mainDepth {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+.mobileShow {
+    display:none;
+}
+
+.mainDepth {
+    background:rgba(255, 255, 255, 0.7);
+    position: absolute;
+    top:30px; left:0;
+    width:200px;
+    font-weight: normal;
+    padding:10px 10px 10px 25px;
+    font-size: 1.3rem;
+    opacity: 0;
+    transition: all 0.3s;
+    visibility: hidden;
+}
+
+.mainDepth li{
+    position: relative;
+}
+
+.mainDepth li:hover{
+    font-weight: bold;
+}
+
+.mainDepth li::before{
+    content: " ";
+    background:#fa7c06;
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    top:13px; left:-10px;
+}
+.menuWrap {
+    float:right;
+}
 
 /* member */
 .member, .search, #allMenu{
@@ -49,29 +101,60 @@ body {font-family: 'Noto Sans KR', sans-serif !important;}
 }
 
 /* 통합검색 */
-.search{ margin-left:20px; }
+.search{
+    margin-left:20px;
+}
 
-.search h2 a{
+.search a{
     display: block;
 }
-.search h2 img{
+.search img{
     line-height: 32px;
     vertical-align: middle;
 }
-.search form {display: none;}
+.search form {
+    display: none;
+}
+
 
 /*전체메뉴 */
-#allMenu{ margin-left:20px; }
-
-#allMenu h2 a{
-    display: block;
+#allMenu{
+    margin-left:20px;
 }
-#allMenu h2 img{
+
+#allmenudown {
+    background:#eee;
+    padding:30px;
+}
+.all-menu-item{
+    width:170px;
+}
+
+#allMenu .dropbtn {
+    border: 0;
+    padding:0;
+    margin:0;
+    cursor: pointer;
+    width:25px;
+    height:19px;
+    background:url(/img/main_09_off.gif);
+    overflow: hidden;
+    padding-left:25px;
+}
+
+#allMenu img{
     line-height: 32px;
     vertical-align: middle;
 }
+.allMenuContents {
+    display: none;
+    overflow: auto;
+    z-index: 1;
+    position: absolute;
+    top:95px; right:0;
+}
 
-.allMenu {display: none;}
+.show {display: block;}
 
 /*슬라이드 이미지*/
 .mainImage {
@@ -89,7 +172,6 @@ body {font-family: 'Noto Sans KR', sans-serif !important;}
     color:#fff;
     margin-bottom: 20px;
     font-size:4.0rem;
-
 }
 
 .underBar{
@@ -135,7 +217,7 @@ body {font-family: 'Noto Sans KR', sans-serif !important;}
     display: flex;
     justify-content: space-around;
     margin-top:50px;
-    width:1250px;
+    width:1300px;
     margin:50px auto 0;
 }
 
@@ -198,7 +280,7 @@ body {font-family: 'Noto Sans KR', sans-serif !important;}
     border-radius: 10px;
     display: flex;
     padding:20px 0;
-    width:1250px;
+    width:1300px;
     margin:0 auto;
     justify-content: space-between;
 }
@@ -210,7 +292,6 @@ body {font-family: 'Noto Sans KR', sans-serif !important;}
     height: 352px;
     width:400px;
     position: relative;
-
 }
 
 
@@ -230,7 +311,6 @@ body {font-family: 'Noto Sans KR', sans-serif !important;}
     overflow: hidden;
 }
 
-
 .aboutBtn{
     border:1px solid #fff;
     border-radius: 5px;
@@ -246,16 +326,67 @@ body {font-family: 'Noto Sans KR', sans-serif !important;}
     background:#ff759a;
 }
 
-
-
+.about .aboutList .aboutListItem1:hover .aboutBtn{
+    background: #fff;
+    color:#ff759a;
+    transition: 0.3s ease-in-out;
+}
 
 .aboutListItem2{
     background:#9fdcd7;
 }
 
+.about .aboutList .aboutListItem2:hover .aboutBtn{
+    background: #fff;
+    color:#9fdcd7;
+    transition: 0.3s ease-in-out;
+}
+
 .aboutListItem3{
 
     background:#d9dd80 url(../img/mf2_bg3.png) no-repeat center center;
+}
+
+.about .aboutList .aboutListItem3:hover .aboutBtn{
+    background: #fff;
+    color:#d9dd80;
+    transition: 0.3s ease-in-out;
+}
+
+.about .aboutList .line1{
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    -webkit-transform: scale(0,1);
+    transform: scale(0,1);
+}
+
+.about .aboutList .line2{
+    border-right: 3px solid #fff;
+    border-left: 3px solid #fff;
+    -webkit-transform: scale(1,0);
+    transform: scale(1,0);
+}
+
+
+.about .aboutList .line1, 
+.about .aboutList .line2{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    pointer-events: none;
+    -webkit-transition: opacity 0.75s, -webkit-transform 0.75s;
+    transition: opacity 0.75s, transform 0.75s;
+}
+
+.about .aboutList li:hover .line1, .about .aboutList  li:hover .line2 {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: scale(1);
+    transform: scale(1);
 }
 
 .footer{
@@ -265,6 +396,27 @@ body {font-family: 'Noto Sans KR', sans-serif !important;}
     padding:50px 0 60px;
 }
 
+.footerMenu li {
+    display: inline-block;
+    font-size:1.6rem;
+    margin-bottom:20px;
+    color:#eee;
+}
+
+.footerMenu li:not(:last-child)::after{
+    content:" │ ";
+}
+
+.footerMenu li:first-child{
+    font-weight: 800;
+    color:#fff;
+}
+
 .address{
     font-style:normal;
+    color:#888;
+}
+
+.copyright {
+    color:#888;
 }

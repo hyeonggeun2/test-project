@@ -1,13 +1,7 @@
-//<![CDATA[
-    $(document).ready(function(){
-        $(".menu-item li").hide();
-        $(".active").next("li").show();
-        
-        $(".menu-item").click(function() {
-            $(this).next("li").slideToggle("fast")
-                    .siblings("ul:visible").slideUp("fast");
-            $(this).toggleClass("active")
-                    .siblings("h3").removeClass("active");
-            });
-    });
-    //]]>
+var item = $('.mainMenu .menu-item');
+
+// 메인 메뉴 제어를 위한 함수
+item.on('mouseover focusin', function(){
+  item.removeClass('.active')
+  $(this).addClass('.active');
+});
