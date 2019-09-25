@@ -129,15 +129,16 @@
 /* 우리들의 송파 */
 
 .promise {
-  max-width:1300px;
   margin-top:20px;
   background: url(../img/main_38.gif) no-repeat center;
-  background-size:cover;
   text-align: center;
   padding-top: 110px;
   margin: 0 auto;
 }
-
+.promiseWrap{
+  max-width: 1300px;
+  margin:0 auto;
+}
 
 .promise-heading {
   font-size: 4rem;
@@ -227,15 +228,17 @@
 
 .news ul{
   width: 1050px;
-  display:flex;
+  
+  display: inline-block;
+  /*   display:flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between; */
 }
-
+/* 
 .news ul li:nth-child(2)::before{
   content:url(../img/main_44.gif);
   margin:0 20px;
-}
+} */
 
 .news-more{
   background: url(../img/mb_more.png);
@@ -247,21 +250,41 @@
   transition: all 0.3s ease-in-out; 
 }
 
-.news ul li a{
-  display:inline-block;
-  font-size:15px;
+.news ul li {
+  font-size:1.3rem;
+  display: inline-block;
+  width:45%;
+  line-height: 50px;
 }
 
-.news ul li time{
-  display:inline-block;
-  font-size:15px;
-  text-align: right;
+.news ul li a {
+  display: inline-block;
+  width:75%;
+
 }
+
+
+.news ul li:last-child{
+  background: url(../img/main_44.gif) no-repeat left;
+}
+
 
 .news-more:hover{
-  transform: rotate(90deg)
+  transform: rotate(90deg);
 }
 
 .news ul li time{
   color : #999aae;
+}
+
+@media screen and (max-width:1299px){
+
+  .news ul li:last-child{
+    display: none;
+  }
+  .interoduceText, .aboutText {
+    width:100%;
+  }
+  .menuWrap {display: none;}
+
 }
