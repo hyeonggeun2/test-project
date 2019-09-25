@@ -11,8 +11,21 @@
   .swiper-button-prev{left: 200px}
 }
 
+@keyframes transform-none {
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
 .barunpenR {
   font-family: 'NanumBarunpenR';
+}
+
+.scroll{
+  opacity: 0;
+  transform: translateY(4rem);
+  animation: transform-none 1.5s cubic-bezier(0.6, 0.01, 0.16, 1) forwards;
 }
 
 .where-swiper {
@@ -106,7 +119,8 @@
 
 .picnic-text{
   text-align: center;
-  margin-bottom:20px;
+  margin-bottom:50px;
+  color:#7f7f7f;
 }
 
 .picnic-list li{
@@ -114,6 +128,7 @@
   flex-direction: column;
   align-items: center;
 }
+
 
 .picnic-list li:hover .picnic-img{
   transform: scale(1.05, 1.05);
@@ -147,6 +162,7 @@
 .promise-text {
   margin-bottom: 20px;
   text-align: center;
+  color:#7f7f7f;
 }
 
 .promise-list {

@@ -10,10 +10,10 @@ var Sswiper = new Swiper('.swiper-container', {
 });
 // 1번째 스크립트
 var swiper = new Swiper('.s-swiper-container', {
-  slidesPerView: 1,
-  spaceBetween: 10,
+  slidesPerView: 2,
+  spaceBetween: 20,
   // init: false,
-  // loop: true,
+  loop: true,
   pagination: {
     el: '.s-swiper-pagination',
     clickable: true,
@@ -23,15 +23,15 @@ var swiper = new Swiper('.s-swiper-container', {
     prevEl: '.s-swiper-button-prev',
   },
   breakpoints: {
-    // 640: {
+    // 600: {
     //   slidesPerView: 2,
     //   spaceBetween: 20,
     // },
-    // 768: {
-    //   slidesPerView: 3,
-    //   spaceBetween: 30,
-    // },
-    1000: {
+    900: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+    1150: {
       slidesPerView: 4,
       spaceBetween: 10,      
     },
