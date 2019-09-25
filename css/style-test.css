@@ -1,15 +1,52 @@
-@media screen and (min-width:1580px){
-  .swiper-button-next{right: 70px}
-  .swiper-button-prev{left: 70px}
+@media screen and (min-width:1580px) {
+  .swiper-button-next {
+    right: 70px
+  }
+
+  .swiper-button-prev {
+    left: 70px
+  }
 }
-@media screen and (min-width:1700px){
-  .swiper-button-next{right: 110px}
-  .swiper-button-prev{left: 110px}
+
+@media screen and (min-width:1700px) {
+  .swiper-button-next {
+    right: 110px
+  }
+
+  .swiper-button-prev {
+    left: 110px
+  }
 }
-@media screen and (min-width:1920px){
-  .swiper-button-next{right: 200px}
-  .swiper-button-prev{left: 200px}
+
+@media screen and (min-width:1920px) {
+  .swiper-button-next {
+    right: 200px
+  }
+
+  .swiper-button-prev {
+    left: 200px
+  }
 }
+
+@media screen and (max-width:900px) {
+  .swiper-container {
+    width: 800px;
+    /* max-width:900px; */
+    background: url(../img/main_25.gif) no-repeat center;
+    background-size:720px 1000px;
+    height: 1000px;
+  }
+
+  .where {
+    display: flex;
+    flex-direction: column;
+  }
+ 
+  .where-text {
+    text-align: center;
+  }
+}
+
 .barunpenR {
   font-family: 'NanumBarunpenR';
 }
@@ -20,34 +57,34 @@
   padding-top: 95px;
 }
 
-.where{
-  margin-bottom:50px;
-  display:flex;
+.where {
+  margin-bottom: 50px;
+  display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom:50px;
+  padding-bottom: 50px;
 }
 
-.where-img{
+.where-img {
   padding: 30px;
-  transition: all 0.3s ease-in-out; 
+  transition: all 0.3s ease-in-out;
 }
 
-.img-border-block{
+.img-border-block {
   border: 1px dashed #744d71;
   border-radius: 5px;
-  order:-1;
+  order: -1;
   margin-right: 50px;
 }
 
-.where-text{
+.where-text {
   color: #fff;
-  width:600px;
-  font-size:16px;
+  max-width: 600px;
+  font-size: 16px;
 }
 
-.where-text p{
-  margin-top:10px;
+.where-text p {
+  margin-top: 10px;
 }
 
 .where-more {
@@ -56,11 +93,11 @@
   border-radius: 5px;
   margin-top: 20px;
   display: inline-block;
-  transition: all 0.3s ease-in-out; 
+  transition: all 0.3s ease-in-out;
 }
 
-.where-heading{
-  font-size:48px;
+.where-heading {
+  font-size: 48px;
 }
 
 .where:hover .where-more {
@@ -70,13 +107,13 @@
   font-weight: bold;
 }
 
-.where:hover .where-img{
-  transform: scale(1.05,1.05);
+.where:hover .where-img {
+  transform: scale(1.05, 1.05);
 }
 
-.overhidden{
-  order:-1;
-  width:310px;
+.overhidden {
+  order: -1;
+  width: 310px;
   height: 240px;
   overflow: hidden;
   border-radius: 5px;
@@ -85,59 +122,60 @@
 /* 송파나들이 */
 .picnic {
   background: url(../img/main_28.gif) no-repeat 100% 10%;
-  max-width:1300px;
+  max-width: 1300px;
   margin: 0 auto 0 auto;
 }
 
-.picnic-list li p{
-  width:240px;
+.picnic-list li p {
+  width: 240px;
 }
 
-.picnic-heading{
-  font-size:4rem;
+.picnic-heading {
+  font-size: 4rem;
   text-align: center;
 }
 
-.picnic-list h3{
+.picnic-list h3 {
   margin: 30px 0 15px;
-  font-size:22px;
+  font-size: 22px;
 }
 
-.picnic-text{
+.picnic-text {
   text-align: center;
-  margin-bottom:50px;
-  color:#7f7f7f;
+  margin-bottom: 50px;
+  color: #7f7f7f;
 }
 
-.picnic-list li{
-  display:flex;
+.picnic-list li {
+  display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 
-.picnic-list li:hover .picnic-img{
+.picnic-list li:hover .picnic-img {
   transform: scale(1.05, 1.05);
 }
 
 
-.picnic-list img{
+.picnic-list img {
   transform: scale(1);
-  transition: all 0.3s ease-in-out; 
+  transition: all 0.3s ease-in-out;
 }
 
 /* 우리들의 송파 */
 
 .promise {
-  margin-top:20px;
+  margin-top: 20px;
   background: url(../img/main_38.gif) no-repeat center;
   text-align: center;
   padding-top: 110px;
   margin: 0 auto;
 }
-.promiseWrap{
+
+.promiseWrap {
   max-width: 1300px;
-  margin:0 auto;
+  margin: 0 auto;
 }
 
 .promise-heading {
@@ -148,15 +186,15 @@
 .promise-text {
   margin-bottom: 20px;
   text-align: center;
-  color:#7f7f7f;
+  color: #7f7f7f;
 }
 
 .promise-list {
   display: flex;
   justify-content: space-evenly;
   margin: 0 30px;
-  padding-top : 50px;
-  padding-bottom : 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .promise-list li a {
@@ -174,7 +212,7 @@
 .promise-list li a p {
   text-align: center;
   font-size: 15px;
-  width:260px;
+  width: 260px;
   margin: 0 14px;
 }
 
@@ -187,8 +225,8 @@
   transform: scaleX(-1);
 }
 
-.promise-box img{
-  transition: all 0.3s ease-in-out; 
+.promise-box img {
+  transition: all 0.3s ease-in-out;
 }
 
 .pbox1:hover {
@@ -209,23 +247,24 @@
 
 /* 새소식 */
 
-.news{
+.news {
   background: #32355d;
 }
-.news div{
-  padding:49px 0 35px;
-  color:#fff;
+
+.news div {
+  padding: 49px 0 35px;
+  color: #fff;
   max-width: 1300px;
-  margin:0 auto;
+  margin: 0 auto;
   position: relative;
 }
 
-.news-heading{
+.news-heading {
   font-size: 30px;
-  padding:10px;
+  padding: 10px;
   background: url(../img/main_41.gif) no-repeat right center;
-  width:150px;
-  float:left;
+  width: 150px;
+  float: left;
 }
 
 /* .news-heading::after{
@@ -233,7 +272,7 @@
   padding-left:35px;
 } */
 
-.news ul{
+.news ul {
   width: 80%;
   display: table;
   line-height: 35px;
@@ -241,49 +280,50 @@
   align-items: center;
   justify-content: space-between; */
 }
+
 /* 
 .news ul li:nth-child(2)::before{
   content:url(../img/main_44.gif);
   margin:0 20px;
 } */
 
-.news-more{
+.news-more {
   background: url(../img/mb_more.png);
-  width:32px;
+  width: 32px;
   height: 32px;
   white-space: nowrap;
   overflow: hidden;
-  padding-top:32px;
-  transition: all 0.3s ease-in-out; 
+  padding-top: 32px;
+  transition: all 0.3s ease-in-out;
   position: absolute;
-  top:50%;
-  margin-top:-16px;
-  right:0;
+  top: 50%;
+  margin-top: -16px;
+  right: 0;
 }
 
 .news ul li {
-  font-size:1.3rem;
+  font-size: 1.3rem;
   display: inline-block;
-  width:50%;
+  width: 50%;
   padding: 10px 30px;
-  display:table-cell;
+  display: table-cell;
 }
 
 .news ul li a {
   display: inline-block;
-  width:80%;
+  width: 80%;
 
 }
 
-.news ul li:last-child{
+.news ul li:last-child {
   background: url(../img/main_44.gif) no-repeat left;
 }
 
 
-.news-more:hover{
+.news-more:hover {
   transform: rotate(90deg);
 }
 
-.news ul li time{
-  color : #999aae;
+.news ul li time {
+  color: #999aae;
 }
