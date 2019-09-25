@@ -10,10 +10,12 @@
     <link rel="stylesheet" type="text/css" href="css/slide.css">
     <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
     <link rel="stylesheet" type="text/css" href="css/style-test.css">
+    <link rel="stylesheet" href="css/scroll.css">
     <script defer src="js/jquery.min.js"></script>
     <script defer src="js/submenu.js"></script>
     <script defer src="js/swiper.min.js"></script>
     <script defer src="js/re_swiper.js"></script>
+    <script defer src="js/scroll.js"></script>
     <title>송파꿈나무</title>
     <link rel="shortcut icon" href="img/fav.ico">
 </head>
@@ -335,14 +337,16 @@
     </header>
     <main>
         <section class="section mainImage">
-            <h2 class="scroll barunpenR">HAPPY SONGPA</h2>
-            <p class="scroll barunpenR underBar">즐겁고 신나는 <span>송파에서</span></p>
-            <p class="scroll barunpenR underBar"><span>희망과 꿈</span>을 키워나가요</p>
+            <div class="scroll show-on-scroll">
+                <h2 class="barunpenR">HAPPY SONGPA</h2>
+                <p class="barunpenR underBar">즐겁고 신나는 <span>송파에서</span></p>
+                <p class="barunpenR underBar"><span>희망과 꿈</span>을 키워나가요</p>
+            </div>
             <p>
                 <img src="img/boy.png" alt="희망찬 송파구의 어린이">
             </p>
         </section>
-        <section class="section introduce scroll">
+        <section class="section introduce scroll show-on-scroll">
             <h2 class="barunpenR">송파꿈나무</h2>
             <p class="interoduceText">우리 아이들이 행복하게 자라는 곳, 송파구</p>
             <ul class="interoduceList">
@@ -376,7 +380,7 @@
                 </li>
             </ul>
         </section>
-        <section class="section about">
+        <section class="section about scroll show-on-scroll">
                 <h2 class="barunpenR">송파구가 궁금해요!</h2>
                 <p class="aboutText">송파는 자연의 축복을 받은 아름다운 도시입니다. 또한 송파구는 2천여 년 전 백제의 왕도로서 오랜 역사를 간직한 역사 문화도시입니다.</p>
                 <ul class="aboutList">
@@ -402,7 +406,7 @@
                     </li>
                 </ul>
             </section>
-        <section class="section where">
+        <section class="section where scroll show-on-scroll">
             <div class="where-swiper swiper-container">
               <div class="swiper-wrapper">
                 <ul class="swiper-slide where-list">
@@ -455,7 +459,7 @@
             </div>
 
         </section>
-        <section class="section picnic">
+        <section class="section picnic scroll show-on-scroll">
             <h2 class="picnic-heading barunpenR">송파나들이</h2>
             <p class="picnic-text">송파는 서울에서 유일하게 호수가 있는 아름다운 도시입니다.</p>
             <div class="s-swiper-container">
@@ -494,7 +498,7 @@
               <div class="s-swiper-button-prev"></div>
             </div>
         </section>
-        <section class="section promise">
+        <section class="section promise scroll show-on-scroll">
             <div class="promiseWrap">
             <h2 class="promise-heading barunpenR">우리들의 송파</h2>
             <p class="promise-text">우리 아이들이 행복하게 자라는 곳, 송파구로 가꾸어 가겠습니다.</p>
@@ -543,7 +547,6 @@
               </li>
             </ul>
             <a class="news-more" href="#">더보기</a>
-
         </section>
     </main>
     <footer class="footer">

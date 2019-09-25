@@ -10,22 +10,8 @@
   .swiper-button-next{right: 200px}
   .swiper-button-prev{left: 200px}
 }
-
-@keyframes transform-none {
-  to {
-    transform: none;
-    opacity: 1;
-  }
-}
-
 .barunpenR {
   font-family: 'NanumBarunpenR';
-}
-
-.scroll{
-  opacity: 0;
-  transform: translateY(4rem);
-  animation: transform-none 1.5s cubic-bezier(0.6, 0.01, 0.16, 1) forwards;
 }
 
 .where-swiper {
