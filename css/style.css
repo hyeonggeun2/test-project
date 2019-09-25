@@ -95,6 +95,10 @@ body {font-family: 'Noto Sans KR', sans-serif !important; transition: 0.3s ease-
 }
 
 /* 통합검색 */
+.search{
+    margin-left:20px;
+}
+
 .searchForm {
     display: none;
     position: absolute;
@@ -102,26 +106,9 @@ body {font-family: 'Noto Sans KR', sans-serif !important; transition: 0.3s ease-
     top:45px;
 }
 
-.search{
-    margin-left:20px;
-}
-
-.search a{
-    display: block;
-}
 .search img{
     line-height: 32px;
     vertical-align: middle;
-}
-
-#searchForm{
-    margin:0;
-    padding:0;
-}
-
-
-.searchField {
-    text-align:center;
 }
 
 .searchForm #search{
@@ -495,13 +482,22 @@ body {font-family: 'Noto Sans KR', sans-serif !important; transition: 0.3s ease-
 
 
 @media screen and (max-width:1299px){
+    .header{
+        position: relative;
+    }
+
     #searchField{
         padding:0;
         margin:0;
+        position: absolute;
+        top:0;
+
     }
     .searchForm {
         /* width:100%; */
     }
+
+
 
     .about .aboutList {
         padding: 0 20px;
@@ -529,6 +525,17 @@ body {font-family: 'Noto Sans KR', sans-serif !important; transition: 0.3s ease-
     }
     #gnb, .member{
         display:none;
+    }
+    
+    /* #allmenudown{
+        background:#005dab;
+        position:fixed;
+        top:0;
+    } */
+
+    #allmenudown ul{
+        display: block;
+        width:auto;
     }
   }
 
