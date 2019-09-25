@@ -120,6 +120,7 @@ body {font-family: 'Noto Sans KR', sans-serif !important; transition: 0.3s ease-
 /*전체메뉴 */
 #allMenu{
     margin-left:20px;
+    position: relative;
 }
 
 #allmenudown {
@@ -127,7 +128,8 @@ body {font-family: 'Noto Sans KR', sans-serif !important; transition: 0.3s ease-
     padding:30px;
 }
 .all-menu-item{
-    width:170px;
+    width:200px;
+    font-weight: 800;
 }
 
 #allMenu .dropbtn {
@@ -140,6 +142,8 @@ body {font-family: 'Noto Sans KR', sans-serif !important; transition: 0.3s ease-
     background:url(/img/main_09_off.gif);
     overflow: hidden;
     padding-left:25px;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 #allMenu img{
@@ -151,8 +155,27 @@ body {font-family: 'Noto Sans KR', sans-serif !important; transition: 0.3s ease-
     overflow: auto;
     z-index: 1;
     position: absolute;
-    top:95px; right:0;
+    top:59px; right:0;
 }
+
+.allMenu{
+    display: flex;
+    justify-content: space-evenly;
+    line-height: 1.6;
+    font-size: 1.4rem;
+    width:1180px;
+}
+
+.depth1>li{
+    margin:5px 0;
+}
+
+.depth{ font-weight: normal;}
+
+.depth2 li::before{
+    content:" - ";
+}
+
 
 .show {display: block;}
 

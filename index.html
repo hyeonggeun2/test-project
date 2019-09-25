@@ -16,7 +16,7 @@
 
 <body>
     <header class="header clearfix">
-        <h1 id="logo"><img src="/img/main_03.gif" alt="송파 꿈나무 로고"></h1>
+        <h1 id="logo"><a href="#"><img src="/img/main_03.gif" alt="송파 꿈나무 로고"></a></h1>
         <nav id="gnb">
             <h2 class="readable-hidden">메인메뉴</h2>
             <ul class="mainMenu">
@@ -51,7 +51,7 @@
                             </ul>
                         </li>
                         <li><a href="#">송파 학교맵</a>
-                            <ul>
+                            <ul class="mobileShow">
                                 <li><a href="#">보육시설</a></li>
                                 <li><a href="#">관내학교</a></li>
                             </ul>
@@ -186,144 +186,145 @@
                 </form>
             </div>
             <nav id="allMenu">
-                <button onclick="myFunction()" class="dropbtn">전체메뉴</button>
-                <div>
-                <ul id="allmenudown" class="allMenuContents">
-                    <li class="menu-item all-menu-item">
-                        <a href="#">우리들 송파</a>
-                        <ul class="depth depth1">
-                            <li><a href="#">구청장 인사말</a></li>
-                            <li><a href="#">송파구청 위치</a></li>
-                            <li><a href="#">상징물</a></li>
-                            <li><a href="#">우리구에서 하는일</a>
-                                <ul class="depth depth2">
-                                    <li><a href="#">구청에서는</a></li>
-                                    <li><a href="#">동 주민센터에서는</a></li>
-                                    <li><a href="#">구의회에서는</a></li>
-                                    <li><a href="#">보건소에서는</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">아동, 청소년 복지</a>
-                                <ul class="depth depth2">
-                                    <li><a href="#">생활안전지원</a></li>
-                                    <li><a href="#">교육지원</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">송파구 현황</a></li>
-                            <li><a href="#">송파구 역사</a>
-                                <ul class="depth depth2">
-                                    <li><a href="#">유래와연혁</a></li>
-                                    <li><a href="#">옛모습</a></li>
-                                    <li><a href="#">설화</a></li>
-                                    <li><a href="#">역사적인물</a></li>
-                                    <li><a href="#">문화재</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">송파 학교맵</a>
-                                <ul class="depth depth2">
-                                    <li><a href="#">보육시설</a></li>
-                                    <li><a href="#">관내 학교</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="menu-item all-menu-item">
-                        <a href="#">송파나들이</a>
-                        <ul class="depth depth1">
-                            <li><a href="#">송파명소</a>
-                                <ul class="depth depth2">
-                                    <li><a href="#">올림픽공원</a></li>
-                                    <li><a href="#">석촌호수</a></li>
-                                    <li><a href="#">롯데월드</a></li>
-                                    <li><a href="#">롯데월드타워&amp;몰</a></li>
-                                    <li><a href="#">잠실한강공원</a></li>
-                                    <li><a href="#">성내천</a></li>
-                                    <li><a href="#">문정동 로데오거리</a></li>
-                                    <li><a href="#">가든파이브</a></li>
-                                    <li><a href="#">방이습지</a></li>
-                                    <li><a href="#">석촌호수 카페거리</a></li>
-                                    <li><a href="#">서울놀이마당</a></li>
-                                    <li><a href="#">잠실관광특구</a></li>
-                                    <li><a href="#">한성백제의빛</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">주요시설</a>
-                                <ul class="depth depth2">
-                                    <li><a href="#">공공시설</a></li>
-                                    <li><a href="#">어린이회관/박물관/기념관</a></li>
-                                    <li><a href="#">미술관/전시실/갤러리</a></li>
-                                    <li><a href="#">영화관/공연장</a></li>
-                                    <li><a href="#">관내문화센터</a></li>
-                                    <li><a href="#">시장</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">공원/자연</a>
-                                <ul class="depth depth2">
-                                    <li><a href="#">아름다운 공원들</a></li>
-                                    <li><a href="#">생태환경</a></li>
-                                    <li><a href="#">어린이공원</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">도서관/독서실</a>
-                                <ul class="depth depth2">
-                                    <li><a href="#">도서관</a></li>
-                                    <li><a href="#">구립 청소년 독서실</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="menu-item all-menu-item">
-                        <a href="#">송파문화행사</a>
-                        <ul class="depth depth1">
-                            <li><a href="#">문화캘린더</a>
-                                <ul class="depth depth2">
-                                    <li><a href="#">송파문화캘린더</a></li>
-                                    <li><a href="#">금주의 문화행사</a></li>
-                                    <li><a href="#">이달의 문화행사</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="menu-item all-menu-item">
-                        <a href="#">안전한생활</a>
-                        <ul class="depth depth1">
-                            <li><a href="#">어린이안전</a>
-                                <ul class="depth depth2">
-                                    <li><a href="#">어린이사망통계</a></li>
-                                    <li><a href="#">어린이 안전사고 통계</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">알기쉬운 안전이야기</a>
-                                <ul class="depth depth2">
-                                    <li><a href="#">교통안전</a></li>
-                                    <li><a href="#">가정안전</a></li>
-                                    <li><a href="#">학교안전</a></li>
-                                    <li><a href="#">놀이안전</a></li>
-                                    <li><a href="#">공공시설안전</a></li>
-                                    <li><a href="#">식품안전</a></li>
-                                    <li><a href="#">화제안전</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">안전캘린더</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-item all-menu-item">
-                        <a href="#">송파꿈나무</a>
-                        <ul class="depth depth1">
-                            <li><a href="#">송파 소식</a></li>
-                            <li><a href="#">꿈나무명예기자</a></li>
-                            <li><a href="#">자유롭게 말해요</a></li>
-                            <li><a href="#">그림솜씨,글솜씨 뽐내기</a></li>
-                            <li><a href="#">꿈나무퍼즐</a>
-                                <ul class="depth depth2">
-                                    <li><a href="#">꿈나무퍼즐 응모하기</a></li>
-                                    <li><a href="#">당첨자 확인하기</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
+                <!-- <button onclick="myFunction()" class="dropbtn">전체메뉴</button> -->
+                <a href="#" onclick="myFunction()" class="dropbtn" role="button">전체메뉴</a>
+                <div id="allmenudown" class="allMenuContents">
+                    <ul class="allMenu">
+                        <li class="menu-item all-menu-item">
+                            <a href="#">우리들 송파</a>
+                            <ul class="depth depth1">
+                                <li><a href="#">구청장 인사말</a></li>
+                                <li><a href="#">송파구청 위치</a></li>
+                                <li><a href="#">상징물</a></li>
+                                <li><a href="#">우리구에서 하는일</a>
+                                    <ul class="depth depth2">
+                                        <li><a href="#">구청에서는</a></li>
+                                        <li><a href="#">동 주민센터에서는</a></li>
+                                        <li><a href="#">구의회에서는</a></li>
+                                        <li><a href="#">보건소에서는</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">아동, 청소년 복지</a>
+                                    <ul class="depth depth2">
+                                        <li><a href="#">생활안전지원</a></li>
+                                        <li><a href="#">교육지원</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">송파구 현황</a></li>
+                                <li><a href="#">송파구 역사</a>
+                                    <ul class="depth depth2">
+                                        <li><a href="#">유래와연혁</a></li>
+                                        <li><a href="#">옛모습</a></li>
+                                        <li><a href="#">설화</a></li>
+                                        <li><a href="#">역사적인물</a></li>
+                                        <li><a href="#">문화재</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">송파 학교맵</a>
+                                    <ul class="depth depth2">
+                                        <li><a href="#">보육시설</a></li>
+                                        <li><a href="#">관내 학교</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item all-menu-item">
+                            <a href="#">송파나들이</a>
+                            <ul class="depth depth1">
+                                <li><a href="#">송파명소</a>
+                                    <ul class="depth depth2">
+                                        <li><a href="#">올림픽공원</a></li>
+                                        <li><a href="#">석촌호수</a></li>
+                                        <li><a href="#">롯데월드</a></li>
+                                        <li><a href="#">롯데월드타워&amp;몰</a></li>
+                                        <li><a href="#">잠실한강공원</a></li>
+                                        <li><a href="#">성내천</a></li>
+                                        <li><a href="#">문정동 로데오거리</a></li>
+                                        <li><a href="#">가든파이브</a></li>
+                                        <li><a href="#">방이습지</a></li>
+                                        <li><a href="#">석촌호수 카페거리</a></li>
+                                        <li><a href="#">서울놀이마당</a></li>
+                                        <li><a href="#">잠실관광특구</a></li>
+                                        <li><a href="#">한성백제의빛</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">주요시설</a>
+                                    <ul class="depth depth2">
+                                        <li><a href="#">공공시설</a></li>
+                                        <li><a href="#">어린이회관/박물관/기념관</a></li>
+                                        <li><a href="#">미술관/전시실/갤러리</a></li>
+                                        <li><a href="#">영화관/공연장</a></li>
+                                        <li><a href="#">관내문화센터</a></li>
+                                        <li><a href="#">시장</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">공원/자연</a>
+                                    <ul class="depth depth2">
+                                        <li><a href="#">아름다운 공원들</a></li>
+                                        <li><a href="#">생태환경</a></li>
+                                        <li><a href="#">어린이공원</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">도서관/독서실</a>
+                                    <ul class="depth depth2">
+                                        <li><a href="#">도서관</a></li>
+                                        <li><a href="#">구립 청소년 독서실</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item all-menu-item">
+                            <a href="#">송파문화행사</a>
+                            <ul class="depth depth1">
+                                <li><a href="#">문화캘린더</a>
+                                    <ul class="depth depth2">
+                                        <li><a href="#">송파문화캘린더</a></li>
+                                        <li><a href="#">금주의 문화행사</a></li>
+                                        <li><a href="#">이달의 문화행사</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item all-menu-item">
+                            <a href="#">안전한생활</a>
+                            <ul class="depth depth1">
+                                <li><a href="#">어린이안전</a>
+                                    <ul class="depth depth2">
+                                        <li><a href="#">어린이사망통계</a></li>
+                                        <li><a href="#">어린이 안전사고 통계</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">알기쉬운 안전이야기</a>
+                                    <ul class="depth depth2">
+                                        <li><a href="#">교통안전</a></li>
+                                        <li><a href="#">가정안전</a></li>
+                                        <li><a href="#">학교안전</a></li>
+                                        <li><a href="#">놀이안전</a></li>
+                                        <li><a href="#">공공시설안전</a></li>
+                                        <li><a href="#">식품안전</a></li>
+                                        <li><a href="#">화제안전</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">안전캘린더</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item all-menu-item">
+                            <a href="#">송파꿈나무</a>
+                            <ul class="depth depth1">
+                                <li><a href="#">송파 소식</a></li>
+                                <li><a href="#">꿈나무명예기자</a></li>
+                                <li><a href="#">자유롭게 말해요</a></li>
+                                <li><a href="#">그림솜씨,글솜씨 뽐내기</a></li>
+                                <li><a href="#">꿈나무퍼즐</a>
+                                    <ul class="depth depth2">
+                                        <li><a href="#">꿈나무퍼즐 응모하기</a></li>
+                                        <li><a href="#">당첨자 확인하기</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </div>
 
@@ -416,6 +417,7 @@
             <p>TEL : 02 - 2147 - 2000 (※ 120 다산콜센터로 연결) 02-2147-2200~4 (당직실/ 야간, 공휴일)</p>
         </address>
         <small class="copyright">Copyright 2018. Songpa-gu Office. all rights reserved.</small>
+        </footer>
 
         <script>
                 /* When the user clicks on the button, 
