@@ -5,7 +5,7 @@ body {font-family: 'Noto Sans KR', sans-serif !important; transition: 0.3s ease-
 
 /* 헤더 */
 .header {
-    width:1300px;
+    max-width:1300px;
     padding:30px;
     margin:0 auto;
 }
@@ -34,10 +34,6 @@ body {font-family: 'Noto Sans KR', sans-serif !important; transition: 0.3s ease-
 }
 .mainMenu .menu-item:hover{
     font-weight: bold;
-}
-
-.mainMenu>li:last-child {
-    display: none;
 }
 
 .mainMenu .menu-item:hover .mainDepth {
@@ -82,6 +78,7 @@ body {font-family: 'Noto Sans KR', sans-serif !important; transition: 0.3s ease-
 }
 .menuWrap {
     float:right;
+    position: relative;
 }
 
 /* member */
@@ -101,6 +98,7 @@ body {font-family: 'Noto Sans KR', sans-serif !important; transition: 0.3s ease-
 }
 
 /* 통합검색 */
+
 .search{
     margin-left:20px;
 }
@@ -112,8 +110,38 @@ body {font-family: 'Noto Sans KR', sans-serif !important; transition: 0.3s ease-
     line-height: 32px;
     vertical-align: middle;
 }
-.search form {
+
+#searchForm{
+    margin:0;
+    padding:0;
+}
+
+.searchForm {
     display: none;
+    position: absolute;
+    right:45px;
+    top:45px;
+}
+
+.searchField {
+    text-align:center;
+}
+
+.searchForm #search{
+    border:1px solid #888;
+    padding:20px;
+    width:500px;
+    height:63px;
+}
+
+.searchForm #searchImg{
+    padding:0;
+    margin:0;
+    width:75px;
+    height:63px;
+    position: absolute;
+    top:0;
+    right:0;
 }
 
 
@@ -468,21 +496,22 @@ body {font-family: 'Noto Sans KR', sans-serif !important; transition: 0.3s ease-
 
 
 @media screen and (max-width:1299px){
-    .about .aboutList {
-        padding: 0 20px;
+    #searchField{
+        padding:0;
+        margin:0;
+    }
+    .searchForm {
+        /* width:100%; */
     }
 
-    .about{
+    .about .aboutList {
+        padding: 0 20px;
     }
 
     .box{
       width:50%;
     }
-  
-    /* .about .aboutList li{
-      width:50%;
-    } */
-   
+
     .news ul li{
       width:100%;
     }
@@ -490,15 +519,17 @@ body {font-family: 'Noto Sans KR', sans-serif !important; transition: 0.3s ease-
       display: none;
     }
     .interoduceText, .aboutText {
-      width:100%;
+      width:80%;
     }
-    .menuWrap {display: none;}
 
     .promise-list li {
         width:50%;
     }
     .about .aboutList li{
         padding:50px 20px;
+    }
+    #gnb, .member{
+        display:none;
     }
   }
 
