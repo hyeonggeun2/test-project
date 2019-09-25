@@ -266,6 +266,7 @@
   display: inline-block;
   width:50%;
   padding: 10px 30px;
+  display:table-cell;
 }
 
 .news ul li a {
@@ -285,46 +286,4 @@
 
 .news ul li time{
   color : #999aae;
-}
-
-@media screen and (max-width:1299px){
-  .box{
-    width:50%;
-  }
-
-  .about .aboutList li{
-    width:50%;
-  }
- 
-  .news ul li{
-    width:100%;
-  }
-  .news ul li:last-child{
-    display: none;
-  }
-  .interoduceText, .aboutText {
-    width:100%;
-  }
-  .menuWrap {display: none;}
-  
-
-}
-@media screen and (max-width:799px){
-  .box{
-    width:100%;
-  }
-  
-
-  .about .aboutList li{
-    width:100%;
-  }
- 
-  .news ul{
-    width:100%;
-  }
-
-  .news ul li{
-    width:100%;
-  }
-
 }
