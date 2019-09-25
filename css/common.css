@@ -1,49 +1,25 @@
    @font-face {
-    font-family: 'NanumBarunpenB';
-    src: url('/font/NanumBarunpenB.eot'),
-        url('/font/NanumBarunpenB.woff') format('woff'),
-        url('/font/NanumBarunpenB.ttf') format('truetype');
+    font-family: 'nanumbarunpenB';
+    src: url('/font/nanumbarunpenB.eot'),
+        url('/font/nanumbarunpenB.woff') format('woff'),
+        url('/font/nanumbarunpenB.ttf') format('truetype');
     src: local("※"),
-      url('/font/NanumBarunpenB.eot'),
-      url('/font/NanumBarunpenB.woff') format('woff'),
-      url('/font/NanumBarunpenB.ttf') format('truetype'),
-      url('/font/NanumBarunpenB.svg#webfonturzspG4F') format('svg');
+      url('/font/nanumbarunpenB.eot'),
+      url('/font/nanumbarunpenB.woff') format('woff'),
+      url('/font/nanumbarunpenB.ttf') format('truetype'),
+      url('/font/nanumbarunpenB.svg#webfonturzspG4F') format('svg');
   }
   
   @font-face {
-    font-family: 'NanumBarunpenR';
-    src: url('/font/NanumBarunpenR.eot'),
-        url('/font/NanumBarunpenR.woff') format('woff'),
-        url('/font/NanumBarunpenR.ttf') format('truetype');
+    font-family: 'nanumbarunpenR';
+    src: url('/font/nanumbarunpenR.eot'),
+        url('/font/nanumbarunpenR.woff') format('woff'),
+        url('/font/nanumbarunpenR.ttf') format('truetype');
     src: local("※"),
-      url('/font/NanumBarunpenR.eot'),
-      url('/font/NanumBarunpenR.woff') format('woff'),
-      url('/font/NanumBarunpenR.ttf') format('truetype'),
-      url('/font/NanumBarunpenR.svg#webfonturzspG4F') format('svg');
-  }
-  
-  @font-face {
-    font-family: 'notokr-regular';
-    src: url('/font/notokr-regular.eot'),
-        url('/font/notokr-regular.woff') format('woff'),
-        url('/font/notokr-regular.ttf') format('truetype');
-    src: local("※"),
-      url('/font/notokr-regular.eot'),
-      url('/font/notokr-regular.woff') format('woff'),
-      url('/font/notokr-regular.ttf') format('truetype'),
-      url('/font/notokr-regular.svg#webfonturzspG4F') format('svg');
-  }
-  
-  @font-face {
-    font-family: 'notokr-medium';
-    src: url('/font/notokr-medium.eot'),
-        url('/font/notokr-medium.woff') format('woff'),
-        url('/font/notokr-medium.ttf') format('truetype');
-    src: local("※"),
-      url('/font/notokr-medium.eot'),
-      url('/font/notokr-medium.woff') format('woff'),
-      url('/font/notokr-medium.ttf') format('truetype'),
-      url('/font/notokr-medium.svg#webfonturzspG4F') format('svg');
+      url('/font/nanumbarunpenR.eot'),
+      url('/font/nanumbarunpenR.woff') format('woff'),
+      url('/font/nanumbarunpenR.ttf') format('truetype'),
+      url('/font/nanumbarunpenR.svg#webfonturzspG4F') format('svg');
   }
 
   @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
