@@ -1,0 +1,12 @@
+.scroll {
+  opacity: 0;
+  transform: translateY(10em);
+  transition: transform 4s .25s cubic-bezier(0, 1, .3, 1),
+    opacity .3s .25s ease-out;
+  will-change: transform, opacity;
+}
+
+.scroll.is-visible {
+  transform: translateY(0);
+  opacity: 1;
+}
