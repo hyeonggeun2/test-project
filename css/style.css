@@ -42,9 +42,6 @@ body {font-family: 'Noto Sans KR', sans-serif !important; transition: 0.3s ease-
     visibility: visible;
 }
 
-.mobileShow {
-    display:none;
-}
 
 .mainDepth {
     background:rgba(255, 255, 255, 0.7);
@@ -98,6 +95,12 @@ body {font-family: 'Noto Sans KR', sans-serif !important; transition: 0.3s ease-
 }
 
 /* 통합검색 */
+.searchForm {
+    display: none;
+    position: absolute;
+    right:45px;
+    top:45px;
+}
 
 .search{
     margin-left:20px;
@@ -116,12 +119,6 @@ body {font-family: 'Noto Sans KR', sans-serif !important; transition: 0.3s ease-
     padding:0;
 }
 
-.searchForm {
-    display: none;
-    position: absolute;
-    right:45px;
-    top:45px;
-}
 
 .searchField {
     text-align:center;
@@ -130,8 +127,10 @@ body {font-family: 'Noto Sans KR', sans-serif !important; transition: 0.3s ease-
 .searchForm #search{
     border:1px solid #888;
     padding:20px;
-    width:500px;
+    width:400px;
     height:63px;
+    position: absolute;
+    right:75px;
 }
 
 .searchForm #searchImg{
