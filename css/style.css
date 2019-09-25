@@ -473,7 +473,6 @@ body {font-family: 'Noto Sans KR', sans-serif !important; transition: 0.3s ease-
     }
 
     .about{
-        padding:100px;
     }
 
     .box{
@@ -497,6 +496,9 @@ body {font-family: 'Noto Sans KR', sans-serif !important; transition: 0.3s ease-
 
     .promise-list li {
         width:50%;
+    }
+    .about .aboutList li{
+        padding:50px 20px;
     }
   }
 
