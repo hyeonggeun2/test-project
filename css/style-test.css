@@ -231,7 +231,7 @@
   justify-content: space-between;
 }
 
-.news ul li:nth-child(n+2)::before{
+.news ul li:nth-child(2)::before{
   content:url(../img/main_44.gif);
   margin:0 20px;
 }
@@ -249,17 +249,11 @@
 .news ul li a{
   display:inline-block;
   font-size:15px;
-  width:70%;
-}
-
-.news ul li{
-  width:500px;
 }
 
 .news ul li time{
   display:inline-block;
   font-size:15px;
-  width:25%;
   text-align: right;
 }
 
