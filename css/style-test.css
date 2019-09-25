@@ -270,7 +270,8 @@
   padding-top:32px;
   transition: all 0.3s ease-in-out; 
   position: absolute;
-  top:calc(50%-16px);
+  top:50%;
+  margin-top:-16px;
   right:0;
 }
 
@@ -301,7 +302,14 @@
 }
 
 @media screen and (max-width:1299px){
+  .box{
+    width:50%;
+  }
 
+  .about .aboutList li{
+    width:50%;
+  }
+ 
   .news ul li{
     width:100%;
   }
@@ -313,10 +321,18 @@
   }
   .menuWrap {display: none;}
   
-  .menuWrap {display: none;}
 
 }
 @media screen and (max-width:799px){
+  .box{
+    width:100%;
+  }
+  
+
+  .about .aboutList li{
+    width:100%;
+  }
+ 
   .news ul{
     width:100%;
   }
