@@ -132,6 +132,7 @@ body {font-family: 'Noto Sans KR', sans-serif !important; transition: 0.3s ease-
 
 
 /*전체메뉴 */
+
 #allMenu{
     margin-left:20px;
     position: relative;
@@ -190,8 +191,16 @@ body {font-family: 'Noto Sans KR', sans-serif !important; transition: 0.3s ease-
     content:" - ";
 }
 
-
 .show {display: block;}
+
+
+.mobileMenu_closeBtn {
+    display: none;
+    position: absolute;
+    top:-31px;
+    right:170px;
+    z-index: 10;
+}
 
 /*슬라이드 이미지*/
 .mainImage {
@@ -497,7 +506,15 @@ body {font-family: 'Noto Sans KR', sans-serif !important; transition: 0.3s ease-
         /* width:100%; */
     }
 
-
+    .depth1 li::before{
+        content: " ";
+        background: #fa7c06;
+        display: inline-block;
+        width: 5px;
+        height: 5px;
+        margin-right: 10px;
+        margin-bottom: 3px;
+    }
 
     .about .aboutList {
         padding: 0 20px;
@@ -527,11 +544,43 @@ body {font-family: 'Noto Sans KR', sans-serif !important; transition: 0.3s ease-
         display:none;
     }
     
-    /* #allmenudown{
+    #allmenudown{
         background:#005dab;
         position:fixed;
         top:0;
-    } */
+        overflow-y:auto;
+        height:100%;
+        padding:30px 0;
+     }
+
+    #allmenudown .all-menu-item{
+        color: white;
+        border-bottom:2px solid #fff;
+    }
+
+    #allmenudown .all-menu-item .depth li{
+        border-bottom:1px solid #fff;
+        background:#aec9e0;
+        color:#181818;
+        margin:0;
+        padding:10px;
+    }
+
+    #allmenudown .all-menu-item>a{
+        display: inline-block;
+        padding: 10px;
+    }
+
+    #allmenudown .all-menu-item .depth li:last-child{
+        border-bottom:none;
+    }
+
+    #allmenudown ul ul {
+        display: none;
+    }
+    #allmenudown li.active ul {
+        display: block;
+    }
 
     #allmenudown ul{
         display: block;
