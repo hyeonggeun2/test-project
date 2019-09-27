@@ -586,6 +586,10 @@ body {font-family: 'Noto Sans KR', sans-serif !important; transition: 0.3s ease-
         display: block;
         width:auto;
     }
+    .submenu-item-btn::after{
+        content: url(../img/m_on.png);
+        float:right;
+    }
 
   }
 
@@ -625,7 +629,7 @@ body {font-family: 'Noto Sans KR', sans-serif !important; transition: 0.3s ease-
     .news-more {
         top:65px !important;
     }
-    
+
   }
 
   .body-hidden{

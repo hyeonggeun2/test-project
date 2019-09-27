@@ -28,10 +28,9 @@ var btnclose = $('.mobileMenu_closeBtn');
 var menudiv = $('.allMenuContents');
 var menua = $('.menu-item-btn');
 var submenu = $('.depth1');
-var subsubmenu = $('.depth2');
+var submenua = $('.submenu-item-btn');
 
 btnopen.on('click', function (e) {
-	console.log(1);
 	e.preventDefault();
 	body.addClass('body-hidden');
 	menudiv.addClass('menu-act');
@@ -39,7 +38,6 @@ btnopen.on('click', function (e) {
 });
 
 btnclose.on('click', function (e) {
-	console.log(2);
 	e.preventDefault();
 	body.removeClass('body-hidden');
 	menudiv.removeClass('menu-act');
@@ -48,13 +46,17 @@ btnclose.on('click', function (e) {
 
 menua.on('click', function (e) {
 	e.preventDefault();
-	submenu.toggleClass('menu-act');
+	$(this).parent().siblings().children().removeClass('menu-act');
+	$(this).siblings('ul').toggleClass('menu-act');
 });
 
-submenu.on('click', function (e) {
+
+submenua.on('click', function (e) {
 	e.preventDefault();
-	subsubmenu.toggleClass('menu-act');
+	$(this).parent().siblings().children().removeClass('menu-act');
+	$(this).siblings('ul').toggleClass('menu-act');
 });
+
 } else {
 	function myFunction() {
 		document.getElementById("allmenudown").classList.toggle("show");
