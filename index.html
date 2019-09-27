@@ -12,15 +12,15 @@
     <link rel="stylesheet" type="text/css" href="css/style-test.css">
     <link rel="stylesheet" type="text/css" href="css/scroll.css">
     <script defer src="js/jquery.min.js"></script>
-    <script defer src="js/submenu.js"></script>
     <script defer src="js/swiper.min.js"></script>
     <script defer src="js/re_swiper.js"></script>
     <script defer src="js/scroll.js"></script>
+    <script defer src="js/submenu.js"></script>
     <title>송파꿈나무</title>
     <link rel="shortcut icon" href="img/fav.ico">
 </head>
 
-<body>
+<body class="body">
     <header class="header clearfix">
         <h1 id="logo"><a href="#"><img src="/img/main_03.gif" alt="송파 꿈나무 로고"></a></h1>
         <nav id="gnb">
@@ -71,7 +71,7 @@
                         <li><a href="#">꿈나무퍼즐</a></li>
                     </ul>
                 </li>
-
+                
             </ul>
         </nav>
         <div class="menuWrap">
@@ -81,37 +81,37 @@
                 <li><a href="#">송파구청</a></li>
             </ul>
             <div class="search">
-                <a href="#" role="button" onclick="myFunction2()" class="dropbtn2">
-                    <img src="/img/main_06.gif" alt="통합검색">
-                </a>
-                <form id="searchForm" class="searchForm">
-                    <fieldset class="searchField">
-                        <legend>통합검색 폼</legend>
+                <a href="#" role="button" onclick = "myFunction2()" class="dropbtn2">
+                        <img src="/img/main_06.gif" alt="통합검색">
+                    </a>
+                    <form id="searchForm" class="searchForm">
+                        <fieldset class="searchField">
+                            <legend>통합검색 폼</legend>
                             <input type="text" id="search" name="search" placeholder="통합검색">
                             <input type="image" id="searchImg" src="/img/search.gif" alt="검색">
-                    </fieldset>
-                </form>
-            </div>
-            <nav id="allMenu">
-                <!-- <button onclick="myFunction()" class="dropbtn">전체메뉴</button> -->
-                <a href="#" onclick="myFunction()" class="dropbtn" role="button">전체메뉴</a>
-                <div id="allmenudown" class="allMenuContents">
-                    <ul class="allMenu">
-                        <li class="menu-item all-menu-item">
-                            <a href="#">우리들 송파</a>
-                            <ul class="depth depth1">
-                                <li><a href="#">구청장 인사말</a></li>
-                                <li><a href="#">송파구청 위치</a></li>
-                                <li><a href="#">상징물</a></li>
-                                <li><a href="#">우리구에서 하는일</a>
-                                    <ul class="depth depth2">
-                                        <li><a href="#">구청에서는</a></li>
-                                        <li><a href="#">동 주민센터에서는</a></li>
-                                        <li><a href="#">구의회에서는</a></li>
-                                        <li><a href="#">보건소에서는</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">아동, 청소년 복지</a>
+                        </fieldset>
+                    </form>
+                </div>
+                <nav id="allMenu">
+                    <!-- <button onclick="myFunction()" class="dropbtn">전체메뉴</button> -->
+                    <a href="#" class="dropbtn" onclick="myFunction()" role="button">전체메뉴</a>
+                    <div id="allmenudown" class="allMenuContents">
+                        <ul class="allMenu">
+                            <li class="menu-item all-menu-item">
+                                <a href="#" class="menu-item-btn">우리들 송파</a>
+                                <ul class="depth depth1">
+                                    <li><a href="#">구청장 인사말</a></li>
+                                    <li><a href="#">송파구청 위치</a></li>
+                                    <li><a href="#">상징물</a></li>
+                                    <li><a href="#">우리구에서 하는일</a>
+                                        <ul class="depth depth2">
+                                            <li><a href="#">구청에서는</a></li>
+                                            <li><a href="#">동 주민센터에서는</a></li>
+                                            <li><a href="#">구의회에서는</a></li>
+                                            <li><a href="#">보건소에서는</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">아동, 청소년 복지</a>
                                     <ul class="depth depth2">
                                         <li><a href="#">생활안전지원</a></li>
                                         <li><a href="#">교육지원</a></li>
@@ -136,7 +136,7 @@
                             </ul>
                         </li>
                         <li class="menu-item all-menu-item">
-                            <a href="#">송파나들이</a>
+                            <a href="#" class="menu-item-btn">송파나들이</a>
                             <ul class="depth depth1">
                                 <li><a href="#">송파명소</a>
                                     <ul class="depth depth2">
@@ -181,7 +181,7 @@
                             </ul>
                         </li>
                         <li class="menu-item all-menu-item">
-                            <a href="#">송파문화행사</a>
+                            <a href="#" class="menu-item-btn">송파문화행사</a>
                             <ul class="depth depth1">
                                 <li><a href="#">문화캘린더</a>
                                     <ul class="depth depth2">
@@ -193,7 +193,7 @@
                             </ul>
                         </li>
                         <li class="menu-item all-menu-item">
-                            <a href="#">안전한생활</a>
+                            <a href="#" class="menu-item-btn">안전한생활</a>
                             <ul class="depth depth1">
                                 <li><a href="#">어린이안전</a>
                                     <ul class="depth depth2">
@@ -216,7 +216,7 @@
                             </ul>
                         </li>
                         <li class="menu-item all-menu-item">
-                            <a href="#">송파꿈나무</a>
+                            <a href="#" class="menu-item-btn">송파꿈나무</a>
                             <ul class="depth depth1">
                                 <li><a href="#">송파 소식</a></li>
                                 <li><a href="#">꿈나무명예기자</a></li>
@@ -291,181 +291,181 @@
             </ul>
         </section>
         <section class="section about scroll show-on-scroll">
-                <h2 class="barunpenR">송파구가 궁금해요!</h2>
-                <p class="aboutText">송파는 자연의 축복을 받은 아름다운 도시입니다. 또한 송파구는 2천여 년 전 백제의 왕도로서 오랜 역사를 간직한 역사 문화도시입니다.</p>
-                <ul class="aboutList clearfix">
-                    <li class="aboutListItem aboutListItem1">
-                        <div class="aboutTextBox">
-                            <h3 class="barunpenR">송파구에서는 무슨 일을 하나요?</h3>
-                            <p class="textOverFlow">우리 주민들의 일상생활과 관계되는 모든 일을 하고 있어요. 특히 미래의 주역인 우리 꿈나무들을 위해 교육 환경 개선은 물론 안전한 도시를 만들기 위해 힘쓰고 있습니다.</p>
-                        </div>
-                        <a href="#" class="aboutBtn">자세히 보기</a>
-                        <i class="line1"></i>
-                        <i class="line2"></i>
-                    </li>
-                    <li class="aboutListItem aboutListItem2">
-                        <div class="aboutTextBox">
-                            <h3 class="barunpenR">송파구의 역사가 궁금해요!</h3>
-                            <p class="textOverFlow">송파라는 지명은 고려시대 이전부터 있었던 것으로 추정되며, 소나무가 많은 언덕이라고 해서 송파(松坡)라 불리웠습니다. 우리 송파지역은 한강연안에 위치한 지리적 여건으로 인하여 선사시대부터 신석기인들이 거주하였던 곳으로 고대국가성립과 함께 고조선의 생활무대가 되기도 하였으며, 백제의 시조 온조왕부터 21대 개로왕까지 약 493년간 백제의 수도였던 곳으로, 4세기 후반에서 신라가 삼국을 통일하는 7세기 후반까지 한강유역은 백제(하남위례성 및 한성), 고구려(남평양성), 신라(한산주--남한산주--한주)의 세력다툼이 치열하였던 지역이였습니다.</p>
-                        </div>
-                        <a href="#" class="aboutBtn">자세히 보기</a>
-                        <i class="line1"></i>
-                        <i class="line2"></i>
-                    </li>
-                    <li class="aboutListItem aboutListItem3">
-                        
-                        <div class="aboutTextBox">
-                            <h3 class="barunpenR">송파구청 위치는 어디인가요?</h3>
-                        </div>
-                        <a href="#" class="aboutBtn">자세히 보기</a>
-                        <i class="line1"></i>
-                        <i class="line2"></i>
-                    </li>
-                </ul>
-            </section>
+            <h2 class="barunpenR">송파구가 궁금해요!</h2>
+            <p class="aboutText">송파는 자연의 축복을 받은 아름다운 도시입니다. 또한 송파구는 2천여 년 전 백제의 왕도로서 오랜 역사를 간직한 역사 문화도시입니다.</p>
+            <ul class="aboutList clearfix">
+                <li class="aboutListItem aboutListItem1">
+                    <div class="aboutTextBox">
+                        <h3 class="barunpenR">송파구에서는 무슨 일을 하나요?</h3>
+                        <p class="textOverFlow">우리 주민들의 일상생활과 관계되는 모든 일을 하고 있어요. 특히 미래의 주역인 우리 꿈나무들을 위해 교육 환경 개선은 물론 안전한 도시를 만들기 위해 힘쓰고 있습니다.</p>
+                    </div>
+                    <a href="#" class="aboutBtn">자세히 보기</a>
+                    <i class="line1"></i>
+                    <i class="line2"></i>
+                </li>
+                <li class="aboutListItem aboutListItem2">
+                    <div class="aboutTextBox">
+                        <h3 class="barunpenR">송파구의 역사가 궁금해요!</h3>
+                        <p class="textOverFlow">송파라는 지명은 고려시대 이전부터 있었던 것으로 추정되며, 소나무가 많은 언덕이라고 해서 송파(松坡)라 불리웠습니다. 우리 송파지역은 한강연안에 위치한 지리적 여건으로 인하여 선사시대부터 신석기인들이 거주하였던 곳으로 고대국가성립과 함께 고조선의 생활무대가 되기도 하였으며, 백제의 시조 온조왕부터 21대 개로왕까지 약 493년간 백제의 수도였던 곳으로, 4세기 후반에서 신라가 삼국을 통일하는 7세기 후반까지 한강유역은 백제(하남위례성 및 한성), 고구려(남평양성), 신라(한산주--남한산주--한주)의 세력다툼이 치열하였던 지역이였습니다.</p>
+                    </div>
+                    <a href="#" class="aboutBtn">자세히 보기</a>
+                    <i class="line1"></i>
+                    <i class="line2"></i>
+                </li>
+                <li class="aboutListItem aboutListItem3">
+                    
+                    <div class="aboutTextBox">
+                        <h3 class="barunpenR">송파구청 위치는 어디인가요?</h3>
+                    </div>
+                    <a href="#" class="aboutBtn">자세히 보기</a>
+                    <i class="line1"></i>
+                    <i class="line2"></i>
+                </li>
+            </ul>
+        </section>
         <section class="section where scroll show-on-scroll">
             <div class="where-swiper swiper-container">
-              <div class="swiper-wrapper">
+                <div class="swiper-wrapper">
+                    <ul class="swiper-slide where-list">
+                        <li class="where">
+                            <div class="where-text">
+                                <h3 class="where-heading barunpenR">우리 동네 어린이 공원은 어디에 있나요?</h3>
+                                <p class="where-detail">
+                                    우리구에서 관리하는 어린이공원은 총 82개소로 어린이들이 안전하고 쾌적한 환경에서 마음껏 뛰어 놀수 있도록 어린이공원 현대화사업을 추진중이며 담배연기없는 금연공원으로 지정하여 관리하고
+                                    있습니다.
+                                </p>
+                                <a href="#" class="where-more">자세히 보기</a>
+                            </div>
+                            <div class="img-border-block">
+                                <img class="where-img" src="img/mf3_03.gif" alt="어린이 공원">
+                            </div>
+                        </li>
+                    </ul>
                 <ul class="swiper-slide where-list">
-                  <li class="where">
-                    <div class="where-text">
-                      <h3 class="where-heading barunpenR">우리 동네 어린이 공원은 어디에 있나요?</h3>
-                      <p class="where-detail">
-                        우리구에서 관리하는 어린이공원은 총 82개소로 어린이들이 안전하고 쾌적한 환경에서 마음껏 뛰어 놀수 있도록 어린이공원 현대화사업을 추진중이며 담배연기없는 금연공원으로 지정하여 관리하고
-                        있습니다.
-                      </p>
-                      <a href="#" class="where-more">자세히 보기</a>
-                    </div>
-                    <div class="img-border-block">
-                      <img class="where-img" src="img/mf3_03.gif" alt="어린이 공원">
-                    </div>
-                  </li>
+                    <li class=" where">
+                        <div class="where-text">
+                            <h3 class="where-heading barunpenR">우리 동네 생태환경은 어디에 있나요?</h3>
+                            <p class="where-detail">
+                                생태경관보전지역은 「자연환경보전법」에 의거 ‘생물다양성이 풍부하여 생태적으로 중요하거나 자연경관이 수려하여 특별히 보전할 가치가
+                                큰 지역’을 대상으로 인위적인 개발을 방지하고 동·식물 서식처 및 자연생태계를 보전·관리하는 지역을 말합니다.
+                            </p>
+                            <a href="#" class="where-more">자세히 보기</a>
+                        </div>
+                        <div class="img-border-block">
+                            <img class="where-img" src="img/mf3_03.gif" alt="어린이 공원">
+                        </div>
+                    </li>
                 </ul>
                 <ul class="swiper-slide where-list">
                     <li class=" where">
-                  <div class="where-text">
-                    <h3 class="where-heading barunpenR">우리 동네 생태환경은 어디에 있나요?</h3>
-                    <p class="where-detail">
-                      생태경관보전지역은 「자연환경보전법」에 의거 ‘생물다양성이 풍부하여 생태적으로 중요하거나 자연경관이 수려하여 특별히 보전할 가치가
-                      큰 지역’을 대상으로 인위적인 개발을 방지하고 동·식물 서식처 및 자연생태계를 보전·관리하는 지역을 말합니다.
-                    </p>
-                    <a href="#" class="where-more">자세히 보기</a>
-                  </div>
-                  <div class="img-border-block">
-                    <img class="where-img" src="img/mf3_03.gif" alt="어린이 공원">
-                  </div>
-                  </li>
+                        <div class="where-text">
+                            <h3 class="where-heading barunpenR">우리 동네 아름다운 공원들은 어디에 있나요?</h3>
+                            <p class="where-detail">
+                                우리구에는 석촌호수, 올림픽공원, 아시아공원, 한강시민공원, 오금공원 등 아름다운 공원들이 많이 있어요.
+                            </p>
+                            <a href="#" class="where-more">자세히 보기</a>
+                        </div>
+                        <div class="img-border-block">
+                            <img class="where-img" src="img/mf3_03.gif" alt="어린이 공원">
+                        </div>
+                    </li>
                 </ul>
-                <ul class="swiper-slide where-list">
-                    <li class=" where">
-                  <div class="where-text">
-                    <h3 class="where-heading barunpenR">우리 동네 아름다운 공원들은 어디에 있나요?</h3>
-                    <p class="where-detail">
-                      우리구에는 석촌호수, 올림픽공원, 아시아공원, 한강시민공원, 오금공원 등 아름다운 공원들이 많이 있어요.
-                    </p>
-                    <a href="#" class="where-more">자세히 보기</a>
-                  </div>
-                  <div class="img-border-block">
-                    <img class="where-img" src="img/mf3_03.gif" alt="어린이 공원">
-                  </div>
-                  </li>
-                </ul>
-              </div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
             </div>
-
-        </section>
-        <section class="section picnic scroll show-on-scroll">
-            <h2 class="picnic-heading barunpenR">송파나들이</h2>
-            <p class="picnic-text">송파는 서울에서 유일하게 호수가 있는 아름다운 도시입니다.</p>
-            <div class="s-swiper-container">
-              <ul class="swiper-wrapper picnic-list">
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        
+    </section>
+    <section class="section picnic scroll show-on-scroll">
+        <h2 class="picnic-heading barunpenR">송파나들이</h2>
+        <p class="picnic-text">송파는 서울에서 유일하게 호수가 있는 아름다운 도시입니다.</p>
+        <div class="s-swiper-container">
+            <ul class="swiper-wrapper picnic-list">
                 <li class="swiper-slide">
-                  <h3 class="barunpenR">올림픽공원</h3>
-                  <p>언제든 쉬어갈 수 있는 녹색휴식처 건강은 물론 마음의 여유까지 생각하는 도심속의 오아시스입니다.</p>
+                    <h3 class="barunpenR">올림픽공원</h3>
+                    <p>언제든 쉬어갈 수 있는 녹색휴식처 건강은 물론 마음의 여유까지 생각하는 도심속의 오아시스입니다.</p>
                   <div class="overhidden">
-                    <img class="picnic-img" src="img/mf4_1.gif" alt="올림픽공원">
-                  </div>
+                      <img class="picnic-img" src="img/mf4_1.gif" alt="올림픽공원">
+                    </div>
                 </li>
                 <li class="swiper-slide">
-                  <h3 class="barunpenR">석촌호수</h3>
-                  <p>송파나루터가 있던 자리에 한강매립사업을 통해 형성된 석촌호수는 둘레 2.5킬로미터의 송파구를 대표하는 호수공원입니다.</p>
-                  <div class="overhidden">
-                    <img class="picnic-img" src=" img/mf4_2.gif" alt="석촌호수">
-                  </div>
+                    <h3 class="barunpenR">석촌호수</h3>
+                    <p>송파나루터가 있던 자리에 한강매립사업을 통해 형성된 석촌호수는 둘레 2.5킬로미터의 송파구를 대표하는 호수공원입니다.</p>
+                    <div class="overhidden">
+                        <img class="picnic-img" src=" img/mf4_2.gif" alt="석촌호수">
+                    </div>
                 </li>
                 <li class="swiper-slide">
-                  <h3 class="barunpenR">롯데월드</h3>
-                  <p>다채로운 즐거움을 맛볼 수 있는 곳. 놀이공원과 백화점, 호텔, 쇼핑몰, 영화관 등을 묶은 레저와 쇼핑복합공간입니다.</p>
-                  <div class="overhidden">
-                    <img class="picnic-img" src=" img/mf4_3.gif" alt="롯데월드">
-                  </div>
+                    <h3 class="barunpenR">롯데월드</h3>
+                    <p>다채로운 즐거움을 맛볼 수 있는 곳. 놀이공원과 백화점, 호텔, 쇼핑몰, 영화관 등을 묶은 레저와 쇼핑복합공간입니다.</p>
+                    <div class="overhidden">
+                        <img class="picnic-img" src=" img/mf4_3.gif" alt="롯데월드">
+                    </div>
                 </li>
                 <li class="swiper-slide">
-                  <h3 class="barunpenR">잠실종합운동장</h3>
-                  <p>1977년부터 시공하여 1984년 9월에 완공된 최대 규모의 경기장으로 승승장구하고있는 한국 스포츠의 역사를 빛낸 주역입니다.</p>
-                  <div class="overhidden">
-                    <img class="picnic-img" src=" img/mf4_4.gif" alt="잠실종합운동장">
-                  </div>
+                    <h3 class="barunpenR">잠실종합운동장</h3>
+                    <p>1977년부터 시공하여 1984년 9월에 완공된 최대 규모의 경기장으로 승승장구하고있는 한국 스포츠의 역사를 빛낸 주역입니다.</p>
+                    <div class="overhidden">
+                        <img class="picnic-img" src=" img/mf4_4.gif" alt="잠실종합운동장">
+                    </div>
                 </li>
-              </ul>
-              <div class="s-swiper-pagination"></div>
-              <div class="s-swiper-button-next"></div>
-              <div class="s-swiper-button-prev"></div>
-            </div>
+            </ul>
+            <div class="s-swiper-pagination"></div>
+            <div class="s-swiper-button-next"></div>
+            <div class="s-swiper-button-prev"></div>
+        </div>
         </section>
         <section class="section promise scroll show-on-scroll">
             <div class="promiseWrap">
-            <h2 class="promise-heading barunpenR">우리들의 송파</h2>
-            <p class="promise-text">우리 아이들이 행복하게 자라는 곳, 송파구로 가꾸어 가겠습니다.</p>
-            <ul class="promise-list">
-              <li>
-                <a href="#" class="promise-box pbox1">
-                  <h3 class="barunpenR">꿈나무프로젝트</h3>
-                  <p>언제든 쉬어갈 수 있는 녹색휴식처 건강은 물론 마음의 여유까지</p>
-                  <img src="img/mf5_1.png" alt="꿈나무프로젝트 이모티콘">
-                </a>
-              </li>
-              <li>
-                <a href="#" class="promise-box pbox2">
-                  <h3 class="barunpenR">아동/청소년복지</h3>
-                  <p>언제든 쉬어갈 수 있는 녹색휴식처 건강은 물론 마음의 여유까지</p>
-                  <img src="img/mf5_2.png" alt="아동/청소년복지 이모티콘">
-                </a>
-              </li>
-              <li>
-                <a href="#" class="promise-box pbox3">
-                  <h3 class="barunpenR">송파 학교맵</h3>
-                  <p>언제든 쉬어갈 수 있는 녹색휴식처 건강은 물론 마음의 여유까지</p>
-                  <img src="img/mf5_3.png" alt="송파 학교맵 이모티콘">
-                </a>
-              </li>
-              <li>
-                <a href="#" class="promise-box pbox4">
-                  <h3 class="barunpenR">꿈나무 e-book</h3>
-                  <p>언제든 쉬어갈 수 있는 녹색휴식처 건강은 물론 마음의 여유까지</p>
-                  <img src="img/mf5_4.png" alt="꿈나무 e-book 이모티콘">
-                </a>
-              </li>
-            </ul>
-        </div>
+                <h2 class="promise-heading barunpenR">우리들의 송파</h2>
+                <p class="promise-text">우리 아이들이 행복하게 자라는 곳, 송파구로 가꾸어 가겠습니다.</p>
+                <ul class="promise-list">
+                    <li>
+                        <a href="#" class="promise-box pbox1">
+                            <h3 class="barunpenR">꿈나무프로젝트</h3>
+                            <p>언제든 쉬어갈 수 있는 녹색휴식처 건강은 물론 마음의 여유까지</p>
+                            <img src="img/mf5_1.png" alt="꿈나무프로젝트 이모티콘">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="promise-box pbox2">
+                            <h3 class="barunpenR">아동/청소년복지</h3>
+                            <p>언제든 쉬어갈 수 있는 녹색휴식처 건강은 물론 마음의 여유까지</p>
+                            <img src="img/mf5_2.png" alt="아동/청소년복지 이모티콘">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="promise-box pbox3">
+                            <h3 class="barunpenR">송파 학교맵</h3>
+                            <p>언제든 쉬어갈 수 있는 녹색휴식처 건강은 물론 마음의 여유까지</p>
+                            <img src="img/mf5_3.png" alt="송파 학교맵 이모티콘">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="promise-box pbox4">
+                            <h3 class="barunpenR">꿈나무 e-book</h3>
+                            <p>언제든 쉬어갈 수 있는 녹색휴식처 건강은 물론 마음의 여유까지</p>
+                            <img src="img/mf5_4.png" alt="꿈나무 e-book 이모티콘">
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </section>
         <section class="section news">
             <div class="clearfix">
                 <h2 class="news-heading barunpenR">송파소식</h2>
                 <ul>
-                <li>
-                    <a href="#">송파구 일자리박람회 개최</a>
-                    <time datetime="2019-09-25T09:24:41">2019-09-25</time>
-                </li>
-                <li>
-                    <a href="#">「KIREC Seoul 2019 (2019 서울 세계재생에너지총회)」개최</a>
-                    <time datetime="2019-09-24T10:50:06">2019-09-24</time>
-                </li>
+                    <li>
+                        <a href="#">송파구 일자리박람회 개최</a>
+                        <time datetime="2019-09-25T09:24:41">2019-09-25</time>
+                    </li>
+                    <li>
+                        <a href="#">「KIREC Seoul 2019 (2019 서울 세계재생에너지총회)」개최</a>
+                        <time datetime="2019-09-24T10:50:06">2019-09-24</time>
+                    </li>
                 </ul>
                 <a class="news-more" href="#">더보기</a>
-             </div>
+            </div>
         </section>
     </main>
     <footer class="footer">
@@ -482,29 +482,29 @@
             <p>TEL : 02 - 2147 - 2000 (※ 120 다산콜센터로 연결) 02-2147-2200~4 (당직실/ 야간, 공휴일)</p>
         </address>
         <small class="copyright">Copyright 2018. Songpa-gu Office. all rights reserved.</small>
-        </footer>
-
-        <script>
-                /* When the user clicks on the button, 
-                toggle between hiding and showing the dropdown content */
-                function myFunction() {
-                  document.getElementById("allmenudown").classList.toggle("show");
-                }
-                
-                // Close the dropdown if the user clicks outside of it
-                window.onclick = function(event) {
-                  if (!event.target.matches('.dropbtn')) {
-                    var dropdowns = document.getElementsByClassName("allMenuContents");
-                    console.log('2번째', dropdowns.length)
-                      if (dropdowns.classList.contains('show')) {
-                        dropdowns.classList.remove('show');
-                      }
-                  }
-                }
+    </footer>
+    
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        // function myFunction() {
+        //     document.getElementById("allmenudown").classList.toggle("show");
+        // }
+        
+        // // Close the dropdown if the user clicks outside of it
+        // window.onclick = function(event) {
+        //     if (!event.target.matches('.dropbtn')) {
+        //         var dropdowns = document.getElementsByClassName("allMenuContents");
+        //         console.log('2번째', dropdowns.length)
+        //         if (dropdowns.classList.contains('show')) {
+        //             dropdowns.classList.remove('show');
+        //         }
+        //     }
+        // }
         /* When the user clicks on the button, 
         toggle between hiding and showing the dropdown content */
         function myFunction2() {
-          document.getElementById("searchForm").classList.toggle("show");
+            document.getElementById("searchForm").classList.toggle("show");
         }
         
         // Close the dropdown if the user clicks outside of it

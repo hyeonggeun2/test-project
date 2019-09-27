@@ -191,7 +191,7 @@ body {font-family: 'Noto Sans KR', sans-serif !important; transition: 0.3s ease-
     content:" - ";
 }
 
-.show {display: block;}
+.show {display: block !important;}
 
 
 .mobileMenu_closeBtn {
@@ -586,6 +586,7 @@ body {font-family: 'Noto Sans KR', sans-serif !important; transition: 0.3s ease-
         display: block;
         width:auto;
     }
+
   }
 
   @media screen and (max-width:799px){
@@ -602,7 +603,7 @@ body {font-family: 'Noto Sans KR', sans-serif !important; transition: 0.3s ease-
     }
 
     .promise-list li {
-        width:100%;
+        width:50%;
     }
 
    
@@ -624,4 +625,13 @@ body {font-family: 'Noto Sans KR', sans-serif !important; transition: 0.3s ease-
     .news-more {
         top:65px !important;
     }
+    
+  }
+
+  .body-hidden{
+      overflow: hidden;
+  }
+
+  .menu-act{
+      display:block !important;
   }

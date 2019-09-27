@@ -30,18 +30,22 @@
 
 @media screen and (max-width:900px) {
   .swiper-container {
-    width: 800px;
-    /* max-width:900px; */
     background: url(../img/main_25.gif) no-repeat center;
-    background-size:720px 1000px;
-    height: 1000px;
+    width: 97vw;
+    background-size: cover;
+  }
+
+  .img-border-block{
+    margin-right:0px !important;
   }
 
   .where {
     display: flex;
     flex-direction: column;
   }
- 
+
+  
+
   .where-text {
     text-align: center;
   }
@@ -54,7 +58,7 @@
 .where-swiper {
   max-width: 1920px;
   background: url(../img/main_25.gif) no-repeat center;
-  padding-top: 95px;
+  margin-top: 95px;
 }
 
 .where {
@@ -165,9 +169,14 @@
 
 /* 우리들의 송파 */
 
+.swiper-container{
+  background-size: cover;
+  padding-top:50px;
+}
+
 .promise {
   margin-top: 20px;
-  background: url(../img/main_38.gif) no-repeat center;
+  background: url(../img/main_38.gif) no-repeat center 0;
   text-align: center;
   padding-top: 110px;
   margin: 0 auto;
