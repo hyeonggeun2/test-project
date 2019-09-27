@@ -591,10 +591,14 @@ body {font-family: 'Noto Sans KR', sans-serif !important; transition: 0.3s ease-
         float:right;
     }
 
-  }
+    
+}
 
-  @media screen and (max-width:799px){
-
+@media screen and (max-width:799px){
+    
+    .mainImage_img img{
+        width:80%;
+    }
     .box{
       width:80%;
     }
@@ -628,6 +632,10 @@ body {font-family: 'Noto Sans KR', sans-serif !important; transition: 0.3s ease-
   
     .news-more {
         top:65px !important;
+    }
+
+    .where{
+        padding-top:50px;
     }
 
   }
