@@ -44,7 +44,9 @@
     flex-direction: column;
   }
 
-  
+  .where-img{
+    width:100%;
+  }
 
   .where-text {
     text-align: center;
@@ -58,7 +60,7 @@
 .where-swiper {
   max-width: 1920px;
   background: url(../img/main_25.gif) no-repeat center;
-  margin-top: 95px;
+  /* margin-top: 95px; */
 }
 
 .where {
@@ -180,6 +182,7 @@
   text-align: center;
   padding-top: 110px;
   margin: 0 auto;
+  background-size: cover;
 }
 
 .promiseWrap {
@@ -221,7 +224,7 @@
 .promise-list li a p {
   text-align: center;
   font-size: 15px;
-  width: 260px;
+  max-width: 260px;
   margin: 0 14px;
 }
 
